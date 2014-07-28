@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>Marka - Beautiful icon transformation</title>
+
+		<link rel="stylesheet" type="text/css" href="./static/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./static/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="./static/style.css">
+	</head>
+	<body>
+
+		<div id="header">
+			<h1>Marka</h1>
+			<p>Beautiful icon transformations (v0.1.0)</p>
+		</div>
+
+		<div id="container">
+			<div id="icon-box">
+				<i id="icon"></i>
+			</div>
+
+			<div id="options">
+				<div class="form-group">
+					<label>Set</label>
+					<select id="setForm" class="form-control">
+						<option value="circle">Circle</option>
+						<option value="square">Square</option>
+						<option value="triangle">Triangle</option>
+						<option value="minus">Minus</option>
+						<option value="plus">Plus</option>
+						<option value="times">Times</option>
+						<option value="asterisk">Asterisk</option>
+						<option value="two-bars">Two Bars</option>
+						<option value="three-bars">Three Bars</option>
+						<option value="chevron">Chevron</option>
+						<option value="arrow">Arrow</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="color">Color</label>
+					<input id="colorForm" type="color" class="form-control" id="color" value="50" placeholder="Color of the icon (hex or rgb)">
+				</div>
+
+				<div class="form-group">
+					<label for="size">Size</label>
+					<input id="sizeForm" type="text" class="form-control" id="size" placeholder="Size the icon (in pixel)">
+				</div>
+
+				<div class="form-group">
+					<label>Rotate</label>
+					<select id="rotateForm" class="form-control">
+						<option value="">None</option>
+						<option value="up">Up</option>
+						<option value="right">Right</option>
+						<option value="down">Down</option>
+						<option value="left">Left</option>
+					</select>
+				</div>
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="code">
+				<i class="blue italic">var</i> m <i class="red">= <i class="italic">new</i></i> <i class="blue italic">Marka</i>(<i class="string">'#icon'</i>); <br>
+				<span class="line"></span>
+			</div>
+
+		</div>
+
+		<div id="list">
+			<h2>Icons</h2>
+
+			<div class="box">
+				<div class="item">
+					<i class="icons" data-type="circle"></i> 
+					Circle <span class="mono">circle</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="square"></i> 
+					Square <span class="mono">square</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="triangle"></i> 
+					Triangle <span class="mono">triangle</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="minus"></i> 
+					Minus <span class="mono">minus</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="plus"></i> 
+					Plus <span class="mono">plus</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="asterisk"></i> 
+					Asterisk <span class="mono">asterisk</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="two-bars"></i> 
+					2 Bars <span class="mono">two-bars</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="three-bars"></i> 
+					3 Bars <span class="mono">three-bars</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="chevron"></i> 
+					Chevron <span class="mono">chevron</span>
+				</div>
+				<div class="item">
+					<i class="icons" data-type="arrow"></i> 
+					Arrow <span class="mono">arrow</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<a id="docs" href="https://github.com/fians/marka">
+			View on Github	
+		</a>
+
+		<div id="footer">
+			2014 &copy; Alfiana E. Sibuea. All right reserved.
+		</div>
+
+		<script type="text/javascript" src="./marka.js"></script>
+		<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="./static/main.js"></script>
+
+	</body>
+</html>
