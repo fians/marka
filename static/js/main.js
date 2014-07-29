@@ -119,7 +119,8 @@
 
 	});
 
-})(window, jQuery);
-
+	
 $('body').css('background', '#f0f');
-		initLanding();
+initLanding();
+
+})(window, jQuery);
