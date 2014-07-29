@@ -106,7 +106,7 @@
 
 	$(document).on('ready', function() {
 
-		//$('body').css('background', '#f0f');
+		$('body').css('background', '#f0f');
 		// Init preview
 		//initLanding();
 
@@ -119,8 +119,5 @@
 
 	});
 
-	
-$('body').css('background', '#f0f');
-initLanding();
 
 })(window, jQuery);
