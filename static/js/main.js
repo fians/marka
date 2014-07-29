@@ -108,7 +108,7 @@
 
 		$('body').css('background', '#f0f');
 		// Init preview
-		//initLanding();
+		initLanding();
 
 		$('#prevIcon').on('click', function() {
 			return navIcon('prev');
