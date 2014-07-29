@@ -107,10 +107,7 @@
 	$(document).on('ready', function() {
 
 		// Init preview
-		if ($('#preview').length) {
-			$('body').css('background', '#F0F');
-			initLanding();
-		}
+		initLanding();
 
 		$('#prevIcon').on('click', function() {
 			return navIcon('prev');
