@@ -106,6 +106,7 @@
 
 	$(document).on('ready', function() {
 
+		$('body').css('background', '#f0f');
 		// Init preview
 		initLanding();
 
