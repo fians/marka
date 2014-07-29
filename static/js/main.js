@@ -106,9 +106,9 @@
 
 	$(document).on('ready', function() {
 
-		$('body').css('background', '#f0f');
+		//$('body').css('background', '#f0f');
 		// Init preview
-		initLanding();
+		//initLanding();
 
 		$('#prevIcon').on('click', function() {
 			return navIcon('prev');
@@ -120,3 +120,6 @@
 	});
 
 })(window, jQuery);
+
+$('body').css('background', '#f0f');
+		initLanding();
