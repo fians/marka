@@ -162,6 +162,11 @@ p {
     cursor:pointer;
 }
 
+#preview .box .nav:hover i,
+#preview .box .nav:active i {
+    background: #FF6600;
+}
+
 #preview #prevIcon {
     left:20px;
 }
@@ -175,6 +180,7 @@ p {
     margin: 0 auto;
     width:250px;
     height:250px;
+    cursor:pointer;
 }
 
 #preview .footer {

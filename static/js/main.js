@@ -102,6 +102,25 @@
 		generateCode();
 	}
 
+	function rotateIcon() {
+
+		var currPos = markaRotate.indexOf($('#icon').data('rotate'));
+		var newPos = 0;
+
+		newPos = currPos + 1;
+		if (newPos > (markaRotate.length - 1)) {
+			newPos = 0;
+		}
+
+		var direction = markaRotate[newPos];
+		markaValue.rotate = direction;
+
+		marka.rotate(direction);
+		$('#icon').data('rotate', direction);
+
+		generateCode();
+	}
+
 
 	$(document).on('ready', function() {
 
@@ -116,6 +135,7 @@
 		$('#nextIcon').on('click', function() {
 			return navIcon('next');
 		});
+		$('#icon').on('click', rotateIcon);
 
 	});
 
