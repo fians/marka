@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * Structure
+ */
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	background:#fff;
+	color: #333;
+	font-size:14px;
+}
+
+p {
+  line-height:160%;
+}
+
+.clear {
+	clear:both;
+}
+
+/**
+ * Landing
+ */
+#lead {
+  position:fixed;
+  background: #FF6600;
+  width:50%;
+  height:100%;
+  color:#fff;
+}
+
+#lead .box {
+  position:absolute;
+  top:50%;
+  right:0%;
+  margin-top:-100px;
+  width:300px;
+  padding:10px 30px;
+  height:200px;
+  text-align:right;
+}
+
+#lead h1 {
+  font-size:70px;
+}
+
+#lead .button,
+#lead .button:visited,
+#lead .button:link,
+#lead .button:active {
+  display:inline-block;
+  margin-top:20px;
+  border:1px solid #fff;
+  padding:10px 20px;
+  color: #fff;
+  border-radius:20px;
+}
+
+#lead .button:hover {
+  background:#fff;
+  color: #FF6600;
+  text-decoration:none;
+}
+
+#preview {
+  position:fixed;
+  width:50%;
+  margin-left:50%;
+  height:100%;
+}
+
+#code {
+  background:#333;
+  border-radius:3px;
+  color:#fff;
+  font-family:monospace;
+  padding:10px 20px;
+  line-height:160%;
+  overflow:auto;
+}
+
+#code .italic {
+  font-style:italic;
+}
+
+#code .red {
+  color:#F92672;
+}
+
+#code .string {
+  color: #E6DB74;
+}
+
+#code .blue {
+  color: #66D9EF;
+}
+
+#preview .box {
+  position:absolute;
+  top:50%;
+  left:0;
+  margin-top:-172px;
+  padding:20px;
+  width:480px;
+  height:355px;
+  box-sizing:border-box;
+}
+
+#preview .box .nav {
+  position:absolute;
+  top:130px;
+  cursor:pointer;
+}
+
+#preview #prevIcon {
+  left:20px;
+}
+
+#preview #nextIcon {
+  right:20px;
+}
+
+#preview #icon {
+  margin-left:90px;
+}
+
+#preview .footer {
+  position:absolute;
+  bottom:10px;
+  left:20px;
+}
