@@ -41,8 +41,8 @@
 		markaValue.size = 250;
 		markaValue.color = '#FF6600';
 
-		//marka = new Marka('#icon');
-		//marka.set(markaValue.set).size(markaValue.size).color(markaValue.color);
+		marka = new Marka('#icon');
+		marka.set(markaValue.set).size(markaValue.size).color(markaValue.color);
 		generateCode();
 
 		// Set navigation icon
@@ -108,6 +108,7 @@
 
 		// Init preview
 		if ($('#landing')) {
+			$('body').css('background', '#F0F');
 			initLanding();
 		}
 
