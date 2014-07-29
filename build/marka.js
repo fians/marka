@@ -40,7 +40,6 @@
 			this.elements = [el];
 		}
 
-		this.colorValue = '#000000';
 		this.sizeValue = 14;
 
 		apply(this.elements, function(i) {
@@ -67,7 +66,7 @@
 			// Append span blocks
 			if (blockList[icon] > i.childNodes.length) {
 				for (var a = 0; a < (blockList[icon] - i.childNodes.length + 2); a++) {
-					var span = document.createElement('span');
+					var span = document.createElement('i');
 					span.setAttribute('style', 'background-color:'+el.colorValue);
 					i.appendChild(span);
 				}

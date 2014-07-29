@@ -14,24 +14,42 @@
 		rotate: '',
 	};
 
-	function initPreview() {
+	var markaSet = [
+		'circle',
+    	'square',
+    	'triangle',
+    	'minus',
+    	'plus',
+    	'times',
+    	'asterisk',
+    	'two-bars',
+    	'three-bars',
+    	'chevron',
+    	'arrow'
+	];
+
+	var markaRotate = [
+		'up',
+		'right',
+		'down',
+		'left'
+	];
+
+	function initLanding() {
+
+		// Set primary icon for landing page
+		markaValue.size = 250;
+		markaValue.color = '#FF6600';
 
 		marka = new Marka('#icon');
-		marka.set(markaValue.set).size(50);
-		resetPosition();
+		marka.set(markaValue.set).size(markaValue.size).color(markaValue.color);
 		generateCode();
 
-		$('.icons').each(function(i, el) {
-			var m = new Marka(el);
-			m.set($(el).data('type')).size(25);
-		});
-	}
-
-	function resetPosition() {
-		$('#icon').css({
-			'margin-top': '-'+(markaValue.size/2)+'px', 
-			'margin-left': '-'+(markaValue.size/2)+'px'
-		});
+		// Set navigation icon
+		var prev = new Marka('#prevIcon');
+		prev.set('triangle').size(40).rotate('left');
+		var next = new Marka('#nextIcon');
+		next.set('triangle').size(40).rotate('right');
 	}
 
 	function generateCode() {
@@ -57,45 +75,48 @@
 			.append(str);
 	}
 
-	function updateSet() {
-		markaValue.set = $(this).val();
-		marka.set(markaValue.set);
-		resetPosition();
-		generateCode();
-	}
+	function navIcon(type) {
 
-	function updateColor() {
+		var currPos = markaSet.indexOf($('#icon').data('icon'));
+		var newPos = 0;
 
-		markaValue.color = $(this).val();
-		marka.color(markaValue.color);
-		resetPosition();
-		generateCode();
-	}
+		if (type === 'prev') {
+			newPos = currPos - 1;
+			if (newPos < 0) {
+				newPos = markaSet.length - 1;
+			}
+		} 
 
-	function updateSize() {
-
-		markaValue.size = $(this).val();
-		marka.size(markaValue.size);
-		resetPosition();
-		generateCode();
-	}
-
-	function updateRotation() {
-
-		markaValue.rotate = $(this).val();
-
-		if (marka.rotate.length > 0) {
-			marka.rotate(markaValue.rotate);
-			resetPosition();
+		if (type === 'next') {
+			newPos = currPos + 1;
+			if (newPos > (markaSet.length - 1)) {
+				newPos = 0;
+			}
 		}
-		
+
+		var set = markaSet[newPos];
+		markaValue.set = set;
+
+		marka.set(set);
+		$('#icon').data('icon', set);
+
 		generateCode();
 	}
+
 
 	$(document).on('ready', function() {
 
 		// Init preview
-		initPreview();
+		if ($('#landing')) {
+			initLanding();
+		}
+
+		$('#prevIcon').on('click', function() {
+			return navIcon('prev');
+		});
+		$('#nextIcon').on('click', function() {
+			return navIcon('next');
+		});
 
 		$('#setForm').on('change', updateSet);
 		$('#colorForm').on('change', updateColor);

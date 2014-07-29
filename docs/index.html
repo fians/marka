@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Marka - Beautiful icon transformation</title>
+		<meta name="description" content="The easy and beautiful way to transform your icon" />
 
 		<link rel="stylesheet" type="text/css" href="./static/css/marka.css">
 		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
@@ -11,121 +13,31 @@
 		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
 	</head>
 	<body>
-
-		<div id="header">
-			<h1>Marka</h1>
-			<p>Beautiful icon transformations (v0.1.0)</p>
+		
+		<div id="lead">
+			<div class="box">
+				<h1>Marka</h1>
+				<p>Beautiful icon transformations</p>
+				<p>(v0.1.0)</p>
+				<a href="#" class="button">View Docs</a>
+			</div>
 		</div>
 
-		<div id="container">
-			<div id="icon-box">
-				<i id="icon"></i>
-			</div>
-
-			<div id="options">
-				<div class="form-group">
-					<label>Set</label>
-					<select id="setForm" class="form-control">
-						<option value="circle">Circle</option>
-						<option value="square">Square</option>
-						<option value="triangle">Triangle</option>
-						<option value="minus">Minus</option>
-						<option value="plus">Plus</option>
-						<option value="times">Times</option>
-						<option value="asterisk">Asterisk</option>
-						<option value="two-bars">Two Bars</option>
-						<option value="three-bars">Three Bars</option>
-						<option value="chevron">Chevron</option>
-						<option value="arrow">Arrow</option>
-					</select>
-				</div>
-
-				<div class="form-group">
-					<label for="color">Color</label>
-					<input id="colorForm" type="color" class="form-control" id="color" value="50" placeholder="Color of the icon (hex or rgb)">
-				</div>
-
-				<div class="form-group">
-					<label for="size">Size</label>
-					<input id="sizeForm" type="text" class="form-control" id="size" placeholder="Size the icon (in pixel)">
-				</div>
-
-				<div class="form-group">
-					<label>Rotate</label>
-					<select id="rotateForm" class="form-control">
-						<option value="">None</option>
-						<option value="up">Up</option>
-						<option value="right">Right</option>
-						<option value="down">Down</option>
-						<option value="left">Left</option>
-					</select>
-				</div>
-
-			</div>
-
-			<div class="clear"></div>
-
-			<div id="code">
-				<i class="blue italic">var</i> m <i class="red">= <i class="italic">new</i></i> <i class="blue italic">Marka</i>(<i class="string">'#icon'</i>); <br>
-				<span class="line"></span>
-			</div>
-
-		</div>
-
-		<div id="list">
-			<h2>Icons</h2>
+		<div id="preview">
 
 			<div class="box">
-				<div class="item">
-					<i class="icons" data-type="circle"></i> 
-					Circle <span class="mono">circle</span>
+				<i id="prevIcon" class="nav"></i>
+				<i id="nextIcon" class="nav"></i>
+				<i id="icon" data-icon="circle"></i>
+				<div id="code">
+					<i class="blue italic">var</i> m <i class="red">= <i class="italic">new</i></i> <i class="blue italic">Marka</i>(<i class="string">'#icon'</i>); <br>
+					<span class="line"></span>
 				</div>
-				<div class="item">
-					<i class="icons" data-type="square"></i> 
-					Square <span class="mono">square</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="triangle"></i> 
-					Triangle <span class="mono">triangle</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="minus"></i> 
-					Minus <span class="mono">minus</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="plus"></i> 
-					Plus <span class="mono">plus</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="asterisk"></i> 
-					Asterisk <span class="mono">asterisk</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="two-bars"></i> 
-					2 Bars <span class="mono">two-bars</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="three-bars"></i> 
-					3 Bars <span class="mono">three-bars</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="chevron"></i> 
-					Chevron <span class="mono">chevron</span>
-				</div>
-				<div class="item">
-					<i class="icons" data-type="arrow"></i> 
-					Arrow <span class="mono">arrow</span>
-				</div>
-				<div class="clear"></div>
 			</div>
-		</div>
 
-		<a id="docs" href="https://github.com/fians/marka">
-			View on Github	
-		</a>
-
-		<div id="footer">
-			2014 &copy; Alfiana E. Sibuea. All right reserved.
+			<div class="footer">
+				2014 &copy; <a href="http://fian.my.id/">Alfiana E. Sibuea</a>. All right reserved.
+			</div>
 		</div>
 
 		<script type="text/javascript" src="./static/js/marka.js"></script>

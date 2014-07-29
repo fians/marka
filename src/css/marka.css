@@ -19,7 +19,7 @@
     transition: all 500ms;
 }
 
-.marka span {
+.marka i {
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -54,23 +54,23 @@
 }
 
 /* Basic Shape */
-.marka.marka-icon-square span,
-.marka.marka-icon-circle span {
+.marka.marka-icon-square i,
+.marka.marka-icon-circle i {
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
 
-.marka.marka-icon-circle span {
+.marka.marka-icon-circle i {
     border-radius: 50%;
 }
 
-.marka.marka-icon-square span {
+.marka.marka-icon-square i {
     border-radius: 10%;
 }
 
-.marka.marka-icon-triangle span {
+.marka.marka-icon-triangle i {
 	border-radius: 0% 30% 0 30%;
     -webkit-transform: rotate(-60deg) skewX(-30deg) scale(0.5,.433) translate(2%, -5%);
     -moz-transform: rotate(-60deg) skewX(-30deg) scale(0.5,.433) translate(2%, -5%);
@@ -78,14 +78,14 @@
     transform: rotate(-60deg) skewX(-30deg) scale(0.5,.433) translate(2%, -5%);
 }
 
-.marka.marka-icon-triangle span:nth-child(2) {
+.marka.marka-icon-triangle i:nth-child(2) {
     -webkit-transform: rotate(-0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
     -moz-transform: rotate(-0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
     -ms-transform: rotate(-0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
     transform: rotate(-0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
 }
 
-.marka.marka-icon-triangle span:nth-child(3) {
+.marka.marka-icon-triangle i:nth-child(3) {
     -webkit-transform: rotate(90deg) skewY(-30deg) scale(0.5) translate(30%, -2%);
     -moz-transform: rotate(90deg) skewY(-30deg) scale(0.5) translate(30%, -2%);
     -ms-transform: rotate(90deg) skewY(-30deg) scale(0.5) translate(30%, -2%);
@@ -93,51 +93,51 @@
 }
 
 /* Math */
-.marka.marka-icon-minus span,
-.marka.marka-icon-plus span,
-.marka.marka-icon-three-bars span {
+.marka.marka-icon-minus i,
+.marka.marka-icon-plus i,
+.marka.marka-icon-three-bars i {
     -webkit-transform: scale(0.8, 0.2);
     -moz-transform: scale(0.8, 0.2);
     -ms-transform: scale(0.8, 0.2);
   	transform: scale(0.8, 0.2);
 }
 
-.marka.marka-icon-plus span:nth-child(2) {
+.marka.marka-icon-plus i:nth-child(2) {
     -webkit-transform: rotate(90deg) scale(0.8, 0.2);
     -moz-transform: rotate(90deg) scale(0.8, 0.2);
     -ms-transform: rotate(90deg) scale(0.8, 0.2);
   	transform: rotate(90deg) scale(0.8, 0.2);
 }
 
-.marka.marka-icon-times span {
+.marka.marka-icon-times i {
     -webkit-transform: rotate(45deg) scale(0.8, 0.2);
     -moz-transform: rotate(45deg) scale(0.8, 0.2);
     -ms-transform: rotate(45deg) scale(0.8, 0.2);
   	transform: rotate(45deg) scale(0.8, 0.2);
 }
 
-.marka.marka-icon-times span:nth-child(2) {
+.marka.marka-icon-times i:nth-child(2) {
     -webkit-transform: rotate(-45deg) scale(0.8, 0.2);
     -moz-transform: rotate(-45deg) scale(0.8, 0.2);
     -ms-transform: rotate(-45deg) scale(0.8, 0.2);
   	transform: rotate(-45deg) scale(0.8, 0.2);
 }
 
-.marka.marka-icon-asterisk span {
+.marka.marka-icon-asterisk i {
     -webkit-transform: rotate(90deg) scale(0.8, 0.2);
     -moz-transform: rotate(90deg) scale(0.8, 0.2);
     -ms-transform: rotate(90deg) scale(0.8, 0.2);
   	transform: rotate(90deg) scale(0.8, 0.2);
 }
 
-.marka.marka-icon-asterisk span:nth-child(2) {
+.marka.marka-icon-asterisk i:nth-child(2) {
     -webkit-transform: rotate(-30deg) scale(0.8, 0.2);
     -moz-transform: rotate(-30deg) scale(0.8, 0.2);
     -ms-transform: rotate(-30deg) scale(0.8, 0.2);
   	transform: rotate(-30deg) scale(0.8, 0.2);
 }
 
-.marka.marka-icon-asterisk span:nth-child(3) {
+.marka.marka-icon-asterisk i:nth-child(3) {
     -webkit-transform: rotate(30deg) scale(0.8, 0.2);
     -moz-transform: rotate(30deg) scale(0.8, 0.2);
     -ms-transform: rotate(30deg) scale(0.8, 0.2);
@@ -145,28 +145,28 @@
 }
 
 /* Bars */
-.marka.marka-icon-two-bars span {
+.marka.marka-icon-two-bars i {
     -webkit-transform: scale(0.8, 0.35) translate(0%, 65%);
     -moz-transform: scale(0.8, 0.35) translate(0%, 65%);
     -ms-transform: scale(0.8, 0.35) translate(0%, 65%);
 	transform: scale(0.8, 0.35) translate(0%, 65%);
 }
 
-.marka.marka-icon-two-bars span:nth-child(2) {
+.marka.marka-icon-two-bars i:nth-child(2) {
     -webkit-transform: scale(0.8, 0.35) translate(0%, -65%);
     -moz-transform: scale(0.8, 0.35) translate(0%, -65%);
     -ms-transform: scale(0.8, 0.35) translate(0%, -65%);
 	transform: scale(0.8, 0.35) translate(0%, -65%);
 }
 
-.marka.marka-icon-three-bars span:nth-child(2) {
+.marka.marka-icon-three-bars i:nth-child(2) {
     -webkit-transform: scale(0.8, 0.2) translate(0%, -140%);
     -moz-transform: scale(0.8, 0.2) translate(0%, -140%);
     -ms-transform: scale(0.8, 0.2) translate(0%, -140%);
   	transform: scale(0.8, 0.2) translate(0%, -140%);
 }
 
-.marka.marka-icon-three-bars span:nth-child(3) {
+.marka.marka-icon-three-bars i:nth-child(3) {
     -webkit-transform: scale(0.8, 0.2) translate(0%, 140%);
     -moz-transform: scale(0.8, 0.2) translate(0%, 140%);
     -ms-transform: scale(0.8, 0.2) translate(0%, 140%);
@@ -174,14 +174,14 @@
 }
 
 /* Navigation */
-.marka.marka-icon-chevron span {
+.marka.marka-icon-chevron i {
     -webkit-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
     -moz-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
     -ms-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
   	transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
 }
 
-.marka.marka-icon-chevron span:nth-child(2) {
+.marka.marka-icon-chevron i:nth-child(2) {
     -webkit-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
     -moz-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
     -ms-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
@@ -189,21 +189,21 @@
 }
 
 /* Arrow */
-.marka.marka-icon-arrow span {
+.marka.marka-icon-arrow i {
     -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
     -moz-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
     -ms-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
   	transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
 }
 
-.marka.marka-icon-arrow span:nth-child(2) {
+.marka.marka-icon-arrow i:nth-child(2) {
     -webkit-transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
     -moz-transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
     -ms-transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
   	transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
 }
 
-.marka.marka-icon-arrow span:nth-child(3) {
+.marka.marka-icon-arrow i:nth-child(3) {
     -webkit-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
     -moz-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
     -ms-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
