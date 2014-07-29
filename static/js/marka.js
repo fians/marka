@@ -40,8 +40,6 @@
 			this.elements = [el];
 		}
 
-		this.sizeValue = 14;
-
 		applyFunc(this.elements, function(i) {
 			if (i.className.indexOf('marka') === -1) {
 				i.className += ' marka ';
@@ -61,7 +59,10 @@
 			// Change class			
 			i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
 			i.className += 'marka-icon-'+icon+' ';
-			i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
+
+			if ('sizeValue' in el) {
+				i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
+			}
 
 			// Append span blocks
 			if (blockList[icon] > i.childNodes.length) {

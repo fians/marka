@@ -38,18 +38,17 @@
 	function initLanding() {
 
 		// Set primary icon for landing page
-		markaValue.size = 250;
 		markaValue.color = '#FF6600';
 
 		marka = new Marka('#icon');
-		marka.set(markaValue.set).size(markaValue.size).color(markaValue.color);
+		marka.set(markaValue.set).color(markaValue.color);
 		generateCode();
 
 		// Set navigation icon
 		var prev = new Marka('#prevIcon');
-		prev.set('triangle').size(40).rotate('left');
+		prev.set('triangle').rotate('left');
 		var next = new Marka('#nextIcon');
-		next.set('triangle').size(40).rotate('right');
+		next.set('triangle').rotate('right');
 	}
 
 	function generateCode() {
@@ -106,9 +105,10 @@
 
 	$(document).on('ready', function() {
 
-		$('body').css('background', '#f0f');
 		// Init preview
-		initLanding();
+		if ($('#preview').length) {
+			initLanding();
+		}
 
 		$('#prevIcon').on('click', function() {
 			return navIcon('prev');
@@ -118,6 +118,5 @@
 		});
 
 	});
-
 
 })(window, jQuery);
