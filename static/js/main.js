@@ -107,7 +107,7 @@
 	$(document).on('ready', function() {
 
 		// Init preview
-		if ($('#landing')) {
+		if ($('#preview').length) {
 			$('body').css('background', '#F0F');
 			initLanding();
 		}
