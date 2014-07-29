@@ -7,7 +7,7 @@ permalink:        pretty
 
 # Server
 source:           docs
-destination:      _gh_pages
+destination:      _docs_site
 host:             127.0.0.1
 port:             4000
 encoding:         UTF-8
