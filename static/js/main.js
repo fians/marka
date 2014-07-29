@@ -119,11 +119,6 @@
 			return navIcon('next');
 		});
 
-		$('#setForm').on('change', updateSet);
-		$('#colorForm').on('change', updateColor);
-		$('#sizeForm').on('change', updateSize);
-		$('#rotateForm').on('change', updateRotation);
-
 	});
 
 })(window, jQuery);
