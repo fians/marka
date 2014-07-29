@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         cssmin: {
             minfy: {
                 files: {
-                    'build/marka.min.css': ['src/css/marka.css']
+                    'dist/css/marka.min.css': ['src/css/marka.css']
                 }
             }
         },
@@ -27,38 +27,32 @@ module.exports = function(grunt) {
             options: {
                 mangle: true,
                 sourceMap: true,
-                sourceMapName: 'build/marka.min.js.map',
+                sourceMapName: 'dist/js/marka.min.js.map',
                 preserveComments: 'some'
             },
             my_target: {
                 files: {
-                    'build/marka.min.js': ['src/js/marka.js']
+                    'dist/js/marka.min.js': ['src/js/marka.js']
                 }
             }
         },
 
         copy: {
-            buildcss: {
+            dist: {
                 expand : true,
-                cwd: 'src/css/',
+                cwd: 'src/',
                 src: '**',
-                dest: 'build/',
-            },
-            buildjs: {
-                expand : true,
-                cwd: 'src/js/',
-                src: 'marka.js',
-                dest: 'build/',
+                dest: 'dist/',
             },
 			docjs: {
                 expand : true,
-                cwd: 'build/',
+                cwd: 'dist/js/',
 				src: 'marka.js',
 				dest: 'docs/static/js',
 			},
             doccss: {
                 expand : true,
-                cwd: 'build/',
+                cwd: 'dist/css/',
                 src: 'marka.css',
                 dest: 'docs/static/css',
             }
