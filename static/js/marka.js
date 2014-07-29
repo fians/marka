@@ -28,7 +28,7 @@
 
     function applyFunc(el, callback) {
 
-    	for (var a = 0; a < el.length, a++) {
+    	for (var a = 0; a < el.length; a++) {
     		callback(el[a]);
     	}
     	
