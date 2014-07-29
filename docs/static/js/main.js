@@ -38,18 +38,17 @@
 	function initLanding() {
 
 		// Set primary icon for landing page
-		markaValue.size = 250;
 		markaValue.color = '#FF6600';
 
 		marka = new Marka('#icon');
-		marka.set(markaValue.set).size(markaValue.size).color(markaValue.color);
+		marka.set(markaValue.set).color(markaValue.color);
 		generateCode();
 
 		// Set navigation icon
 		var prev = new Marka('#prevIcon');
-		prev.set('triangle').size(40).rotate('left');
+		prev.set('triangle').rotate('left');
 		var next = new Marka('#nextIcon');
-		next.set('triangle').size(40).rotate('right');
+		next.set('triangle').rotate('right');
 	}
 
 	function generateCode() {
@@ -103,11 +102,30 @@
 		generateCode();
 	}
 
+	function rotateIcon() {
+
+		var currPos = markaRotate.indexOf($('#icon').data('rotate'));
+		var newPos = 0;
+
+		newPos = currPos + 1;
+		if (newPos > (markaRotate.length - 1)) {
+			newPos = 0;
+		}
+
+		var direction = markaRotate[newPos];
+		markaValue.rotate = direction;
+
+		marka.rotate(direction);
+		$('#icon').data('rotate', direction);
+
+		generateCode();
+	}
+
 
 	$(document).on('ready', function() {
 
 		// Init preview
-		if ($('#landing')) {
+		if ($('#preview').length) {
 			initLanding();
 		}
 
@@ -117,11 +135,7 @@
 		$('#nextIcon').on('click', function() {
 			return navIcon('next');
 		});
-
-		$('#setForm').on('change', updateSet);
-		$('#colorForm').on('change', updateColor);
-		$('#sizeForm').on('change', updateSize);
-		$('#rotateForm').on('change', updateRotation);
+		$('#icon').on('click', rotateIcon);
 
 	});
 

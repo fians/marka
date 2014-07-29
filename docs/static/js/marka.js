@@ -26,7 +26,7 @@
     	'arrow': 3
     };
 
-    function apply(el, callback) {
+    function applyFunc(el, callback) {
     	return Array.prototype.forEach.call(el, callback);
     }
 
@@ -40,9 +40,7 @@
 			this.elements = [el];
 		}
 
-		this.sizeValue = 14;
-
-		apply(this.elements, function(i) {
+		applyFunc(this.elements, function(i) {
 			if (i.className.indexOf('marka') === -1) {
 				i.className += ' marka ';
 			}
@@ -56,12 +54,15 @@
 
 		var el = this;
 
-		apply(this.elements, function(i) {
+		applyFunc(this.elements, function(i) {
 
 			// Change class			
 			i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
 			i.className += 'marka-icon-'+icon+' ';
-			i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
+
+			if ('sizeValue' in el) {
+				i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
+			}
 
 			// Append span blocks
 			if (blockList[icon] > i.childNodes.length) {
@@ -81,7 +82,7 @@
 
 		this.colorValue = color;
 
-		apply(this.elements, function(i) {
+		applyFunc(this.elements, function(i) {
 			for (var a = 0; a < i.childNodes.length; a++) {
 				i.childNodes[a].setAttribute('style', 'background-color:'+color);
 			}
@@ -94,7 +95,7 @@
 
 		this.sizeValue = size;
 
-		apply(this.elements, function(i) {
+		applyFunc(this.elements, function(i) {
 			i.setAttribute('style', 'width:'+size+'px;height:'+size+'px;');
 		});	
 
@@ -103,7 +104,7 @@
 
 	Marka.prototype.rotate = function(direction) {
 
-		apply(this.elements, function(i) {
+		applyFunc(this.elements, function(i) {
 			i.className = i.className.replace('  ', ' ').replace(/marka-rotate-[\w]+/, '');
 			i.className += 'marka-rotate-'+direction+' ';
 		});	
