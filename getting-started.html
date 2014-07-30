@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Getting Started - Marka</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="./static/css/marka.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/prism.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+	</head>
+	<body>
+		<div id="page">
+			<div class="nav">
+				<h1><a href="./">Marka</a></h1>
+				<p>Beautiful icon transformations</p>
+				<p>(v0.1.0)</p>
+
+				<div class="item">
+					<a href="./getting-started.html" class="button">Getting Started</a> 
+					<br>
+					<a href="./icons.html" class="button">Icons</a>
+					<br>
+					<a href="./api.html" class="button">API</a>
+					<br>
+					<a href="./faq.html" class="button">FAQ</a>
+					<br>
+					<a href="https://github.com/fians/marka/" class="button">Github</a>
+				</div>
+			</div>
+			<div class="content">
+				<h1 id="getting-started">Getting Started</h1>
+
+<p>Marka is designed to be easy to use and integrated with
+your website. Download the <a href="https://github.com/fians/marka" target="_blank">latest version of Marka</a>, 
+put the files on your html file, and it’s
+ready to use.</p>
+
+<pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/path/to/marka.min.js"&gt;
+        &lt;script src="/path/to/marka.min.css"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2 id="initialize-marka">Initialize Marka</h2>
+
+<p>Before set the icon you wan to use, you need initialize
+Marka instance on the icon element you want to set up.</p>
+
+<pre><code class="language-markup">&lt;i id="icon"&gt;&lt;/i&gt;
+
+&lt;script&gt;
+    var m = new Marka('#icon');
+&lt;/script&gt;
+</code></pre>
+
+<p>You can also pass jQuery element on Marka parameter,
+like this,</p>
+
+<pre><code class="language-markup">&lt;i id="icon"&gt;&lt;/i&gt;
+
+&lt;script&gt;
+    var m = new Marka($('#icon'));
+&lt;/script&gt;
+</code></pre>
+
+<p>Or if you want to set multiple icon,</p>
+
+<pre><code class="language-markup">&lt;i class="icon"&gt;&lt;/i&gt;
+&lt;i class="icon"&gt;&lt;/i&gt;
+&lt;i class="icon"&gt;&lt;/i&gt;
+
+&lt;script&gt;
+    var m = new Marka('.icon');
+&lt;/script&gt;
+</code></pre>
+
+<p>But, remember. When you initialize multiple 
+element in one Marka instance, all those element
+will be at same Marka instance, which means
+when you set icon, color, size, or rotation 
+with that instance, they (elements) will 
+transform to same state simultaneously. So, it’s
+better to create Marka instance for each element.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-markup">&lt;i id="toggleAccordion"&gt;&lt;/i&gt;
+&lt;i id="toggleModal"&gt;&lt;/i&gt;
+
+&lt;script&gt;
+    var accordionIcon = new Marka('#toggleAccordion');
+    var modalIcon = new Marka('#toggleModal');
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="set-icon">Set Icon</h2>
+
+<p>Marka currently have <a href="/icons.html">11 icons</a> ready to use, 
+and you can see all those icons here. To set icon 
+you can use <code>set()</code> on Marka instance.</p>
+
+<pre><code class="language-javascript">var m = new Marka('#icon');
+m.set('circle');
+</code></pre>
+
+<p>When you need to transform to another icon, just
+apply <code>set()</code> to that instance again.</p>
+
+<pre><code class="language-javascript">var m = new Marka('#icon');
+m.set('circle');
+
+// Change after 3 second
+setTimeout(function() {
+    m.set('square');
+}, 3000);
+</code></pre>
+
+<h2 id="color-it">Color it</h2>
+
+<p>By default, Marka set black <code>#000000</code> as default color
+of any icon. There is two ways to overide the default color
+of your icon, using CSS directly or Marka API, <code>color()</code>.</p>
+
+<p>When you set icon on Marka instance, Marka will append 
+some <code>&lt;i&gt;</code> inside your icon. So if you want to color 
+your icon directly with CSS, you need to set <code>background-color</code>
+or <code>background</code> of <code>&lt;i&gt;</code> element inside your icon.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-css">#icon i {
+    background: #ffffff;
+}
+
+/* Or */
+#icon i {
+    background-color: #ffffff;
+}
+</code></pre>
+
+<p>If you dont want to get your hand dirty to write some 
+CSS for each icon. Marka provides you simple <code>color()</code>
+function which can be chained alongside other function on 
+Marka instance.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-javascript">var m = new Marka('#icon');
+m.set('times').color('#ffffff');
+
+// Transform color after 3 second
+setTimeout(function() {
+    m.color('#ff00000');
+}, 3000);
+</code></pre>
+
+<h2 id="change-size">Change size</h2>
+
+<p>Because created with HTML element, every Marka icon
+is scalable, so you can change to every size you want.
+Just like when you want to change the color, you 
+can change icon size directly with CSS or using <code>size()</code>
+function.</p>
+
+<p>You have to make sure <code>width</code> and <code>height</code> at
+same value when you want to change size the icon with 
+CSS. Because when <code>width</code> and <code>height</code> value is not same,
+your icon probably will be broken.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-css">/* Wrong! */
+#icon {
+    width:20px;
+    height:25px;
+}
+
+/* Correct! */
+#icon {
+    width: 20px;
+    height: 20px;
+}
+</code></pre>
+
+<p>With <code>size()</code>, you can change size of your icon without
+talk directly with CSS.</p>
+
+<pre><code class="language-javascript">var m = new Marka('#icon');
+m.set('circle').size(20); // Set icon size to 20px;
+
+// Transform to larger icon after 3 second
+setTimeout(function() {
+    m.size(30);
+}, 3000);
+</code></pre>
+
+<h2 id="rotate-it">Rotate it</h2>
+
+<p>Marka allows you to change direction of your icon
+with <code>rotate()</code> function. The direction can be ‘up’,
+‘down’, ‘left’, or ‘right’ and very useful if you
+combine it with arrow icon.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-javascript">var m = new Marka('#icon');
+m.set('arrow').rotate('left');
+
+// or down
+m.rotate('down');
+
+// or right
+m.rotate('right');
+
+// or up again
+m.rotate('up');
+</code></pre>
+
+
+				<div class="footer">
+					2014 &copy; <a href="http://fian.my.id/">Alfiana E. Sibuea</a>. All right reserved.
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./static/js/marka.js"></script>
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="./static/js/prism.js"></script>
+		<script type="text/javascript" src="./static/js/main.js"></script>
+	</body>
+</html>

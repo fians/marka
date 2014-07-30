@@ -1,6 +1,6 @@
 
 /*!
- * Marka v0.1.0
+ * Marka v0.1.0-dev
  * https://fian.my.id/marka
  *
  * Copyright 2014 Alfiana E. Sibuea and other contributors
@@ -95,7 +95,7 @@
 /* Math */
 .marka.marka-icon-minus i,
 .marka.marka-icon-plus i,
-.marka.marka-icon-three-bars i {
+.marka.marka-icon-bars i {
     -webkit-transform: scale(0.8, 0.2);
     -moz-transform: scale(0.8, 0.2);
     -ms-transform: scale(0.8, 0.2);
@@ -145,28 +145,28 @@
 }
 
 /* Bars */
-.marka.marka-icon-two-bars i {
-    -webkit-transform: scale(0.8, 0.35) translate(0%, 65%);
-    -moz-transform: scale(0.8, 0.35) translate(0%, 65%);
-    -ms-transform: scale(0.8, 0.35) translate(0%, 65%);
-	transform: scale(0.8, 0.35) translate(0%, 65%);
+.marka.marka-icon-pause i {
+    -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+    -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+    -ms-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+	transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
 }
 
-.marka.marka-icon-two-bars i:nth-child(2) {
-    -webkit-transform: scale(0.8, 0.35) translate(0%, -65%);
-    -moz-transform: scale(0.8, 0.35) translate(0%, -65%);
-    -ms-transform: scale(0.8, 0.35) translate(0%, -65%);
-	transform: scale(0.8, 0.35) translate(0%, -65%);
+.marka.marka-icon-pause i:nth-child(2) {
+    -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+    -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+    -ms-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+	transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
 }
 
-.marka.marka-icon-three-bars i:nth-child(2) {
+.marka.marka-icon-bars i:nth-child(2) {
     -webkit-transform: scale(0.8, 0.2) translate(0%, -140%);
     -moz-transform: scale(0.8, 0.2) translate(0%, -140%);
     -ms-transform: scale(0.8, 0.2) translate(0%, -140%);
   	transform: scale(0.8, 0.2) translate(0%, -140%);
 }
 
-.marka.marka-icon-three-bars i:nth-child(3) {
+.marka.marka-icon-bars i:nth-child(3) {
     -webkit-transform: scale(0.8, 0.2) translate(0%, 140%);
     -moz-transform: scale(0.8, 0.2) translate(0%, 140%);
     -ms-transform: scale(0.8, 0.2) translate(0%, 140%);
