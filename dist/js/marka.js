@@ -20,8 +20,8 @@
     	'plus': 2,
     	'times': 1,
     	'asterisk': 3,
-    	'two-bars': 2,
-    	'three-bars': 3,
+    	'pause': 2,
+    	'bars': 3,
     	'chevron': 2,
     	'arrow': 3
     };

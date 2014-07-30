@@ -22,8 +22,8 @@
     	'plus',
     	'times',
     	'asterisk',
-    	'two-bars',
-    	'three-bars',
+    	'pause',
+    	'bars',
     	'chevron',
     	'arrow'
 	];
