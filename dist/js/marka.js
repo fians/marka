@@ -1,6 +1,6 @@
 
 /*!
- * Marka v0.1.0
+ * Marka v0.1.0-dev
  * https://fian.my.id/marka
  *
  * Copyright 2014 Alfiana E. Sibuea and other contributors
@@ -30,14 +30,36 @@
     	return Array.prototype.forEach.call(el, callback);
     }
 
+    function isElement(o){
+		return (
+			typeof HTMLElement === "object" ? o instanceof HTMLElement : //DOM2
+			o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName==="string"
+		);
+	}
+
 	function Marka(el) {
+		
+		this.elements = [];
 
 		if (typeof el === 'string') {
 			this.elements = document.querySelectorAll(el);
 		}
 
-		if (el instanceof Object) {
-			this.elements = [el];
+		if (isElement(el)) {
+			this.elements.push(el);
+		}
+
+		if (el instanceof Array) {
+
+			for (var a = 0; a < el.length; a++) {
+				if (isElement(el[a])) {
+					this.elements.push(el[a]);
+				}
+			}
+		}
+
+		if (!this.elements.length) {
+			throw Error('No element is selected.');
 		}
 
 		applyFunc(this.elements, function(i) {

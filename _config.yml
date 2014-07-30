@@ -2,9 +2,6 @@
 markdown:         kramdown
 highlighter:      rouge
 
-# Permalinks
-permalink:        pretty
-
 # Server
 source:           docs
 destination:      _docs_site

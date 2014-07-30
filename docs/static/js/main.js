@@ -121,12 +121,42 @@
 		generateCode();
 	}
 
+	function initIconList() {
+
+		$('.iconList .icons').each(function(i, el) {
+			var m = new Marka(el);
+			m.set($(el).data('type'));
+		});
+	}
+
+	function rotateIconList() {
+		var currPos = markaRotate.indexOf($(this).data('rotate'));
+		var newPos = 0;
+
+		newPos = currPos + 1;
+		if (newPos > (markaRotate.length - 1)) {
+			newPos = 0;
+		}
+
+		var direction = markaRotate[newPos];
+		console.log(direction);
+		var m = new Marka(this);
+		m.rotate(direction);
+		$(this).data('rotate', direction);
+	}
+
 
 	$(document).on('ready', function() {
 
 		// Init preview
 		if ($('#preview').length) {
 			initLanding();
+		}
+
+		// Init icon list
+		if ($('.iconList').length) {
+			initIconList();
+			$('.iconList .icons').on('click', rotateIconList);
 		}
 
 		$('#prevIcon').on('click', function() {
