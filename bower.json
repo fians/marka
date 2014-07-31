@@ -1,0 +1,22 @@
+{
+  "name": "marka",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fians/marka",
+  "authors": [
+    "Alfiana Sibuea <alfian.sibuea@gmail.com>"
+  ],
+  "description": "Beautiful icon transformations",
+  "keywords": [
+    "icon",
+    "transform",
+    "css3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
