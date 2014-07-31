@@ -7,7 +7,7 @@ Getting Started
 ===============
 
 Marka is designed to be easy to use and integrated with
-your website. Download the <a href="https://github.com/fians/marka" target="_blank">latest version of Marka</a>, 
+your website. Download the <a href="https://github.com/fians/marka/releases" target="_blank">latest version of Marka</a>, 
 put the files on your html file, and it's
 ready to use.
 
