@@ -7,7 +7,8 @@ Getting Started
 ===============
 
 Marka is designed to be easy to use and integrated with
-your website. Download the <a href="https://github.com/fians/marka/releases" target="_blank">latest version of Marka</a>, 
+your website. Download the <a href="https://github.com/fians/marka/releases" target="_blank">latest version of Marka</a> 
+or you can install it via Bower with `bower install marka`, 
 put the files on your html file, and it's
 ready to use.
 
