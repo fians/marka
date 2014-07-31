@@ -1,0 +1,15 @@
+
+/* Times icon */
+.marka.marka-icon-times i {
+    -webkit-transform: rotate(45deg) scale(0.8, 0.2);
+    -moz-transform: rotate(45deg) scale(0.8, 0.2);
+    -ms-transform: rotate(45deg) scale(0.8, 0.2);
+    transform: rotate(45deg) scale(0.8, 0.2);
+}
+
+.marka.marka-icon-times i:nth-child(2) {
+    -webkit-transform: rotate(-45deg) scale(0.8, 0.2);
+    -moz-transform: rotate(-45deg) scale(0.8, 0.2);
+    -ms-transform: rotate(-45deg) scale(0.8, 0.2);
+    transform: rotate(-45deg) scale(0.8, 0.2);
+}

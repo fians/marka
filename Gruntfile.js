@@ -1,10 +1,17 @@
 module.exports = function(grunt) {
     grunt.initConfig({
 
+        concat_css: {
+            all: {
+                src: ['src/css/marka-core.css', 'src/css/icons/*.css'],
+                dest: 'dist/css/marka-all.css'
+            },
+        },
+
         cssmin: {
-            minfy: {
+            minify: {
                 files: {
-                    'dist/css/marka.min.css': ['src/css/marka.css']
+                    'dist/css/marka-all.min.css': ['dist/css/marka-all.css']
                 }
             }
         },
@@ -53,8 +60,8 @@ module.exports = function(grunt) {
             doccss: {
                 expand : true,
                 cwd: 'dist/css/',
-                src: 'marka.css',
-                dest: 'docs/static/css',
+                src: '**',
+                dest: 'docs/static/css/marka',
             }
 		},
         
@@ -66,7 +73,7 @@ module.exports = function(grunt) {
                     event: ['added', 'deleted', 'changed']
                 },
                 files: ['src/**/*'],
-                tasks: ['cssmin', 'jshint', 'uglify', 'copy']
+                tasks: ['concat_css', 'cssmin', 'jshint', 'uglify', 'copy']
             },
             grunt: {
                 files: ['Gruntfile.js']
@@ -75,6 +82,7 @@ module.exports = function(grunt) {
     });
     
     // Load module
+    grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
