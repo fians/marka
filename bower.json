@@ -12,6 +12,7 @@
     "css3"
   ],
   "license": "MIT",
+  "main": "dist/js/marka.js",
   "ignore": [
     "**/.*",
     "node_modules",
