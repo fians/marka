@@ -32,7 +32,7 @@ Change icon size of Marka element.
 <br>
 _Arguments:_
 
-- `sizeValue` _(integer)_:
+- `sizeValue` _(integer)_: Size of icon (in pixels).
 
 
 
@@ -42,4 +42,4 @@ Change icon direction of Marka element.
 <br>
 _Arguments:_
 
-- `direction` _(string)_:
+- `direction` _(string)_: Direction of icon. It can be "up", "down", "left", or "right".
