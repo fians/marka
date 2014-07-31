@@ -1,5 +1,5 @@
 /*!
- * Marka v0.1.0-dev
+ * Marka v0.1.0
  * https://fian.my.id/marka
  *
  * Copyright 2014 Alfiana E. Sibuea and other contributors
