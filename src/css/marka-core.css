@@ -31,20 +31,17 @@
 .marka.marka-rotate-right {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .marka.marka-rotate-left {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
 .marka.marka-rotate-down {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }

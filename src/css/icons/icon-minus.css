@@ -3,6 +3,5 @@
 .marka.marka-icon-minus i {
     -webkit-transform: scale(0.8, 0.2);
     -moz-transform: scale(0.8, 0.2);
-    -ms-transform: scale(0.8, 0.2);
     transform: scale(0.8, 0.2);
 }

@@ -83,7 +83,7 @@
 		var el = this;
 
 		applyFunc(this.elements, function(i) {
-			
+
 			var blockCount = i.childNodes.length;
 
 			// Append blocks
@@ -107,7 +107,7 @@
 				if ('sizeValue' in el) {
 					i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
 				}
-
+				
 				// Show icon if it's not shown
 				if (i.className.indexOf('marka-set') === -1) {
 					setTimeout(function() {
