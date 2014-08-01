@@ -15,20 +15,40 @@
 	};
 
 	var markaSet = [
+
+		// Shape
 		'circle',
     	'square',
     	'triangle',
+
+    	// Math
     	'minus',
     	'plus',
     	'times',
     	'asterisk',
-    	'pause',
-    	'bars',
-    	'chevron',
-    	'arrow',
+
+    	// Form & List
     	'check',
     	'sort',
     	'sort-half',
+
+    	// App
+    	'signal-three-one',
+    	'signal-three-two',
+    	'signal-three',
+    	'signal-five-one',
+    	'signal-five-two',
+    	'signal-five-three',
+    	'signal-five-four',
+    	'signal-five',
+
+    	// Audio
+    	'pause',
+
+    	// Navigation
+    	'bars',
+    	'chevron',
+    	'arrow',
 	];
 
 	var markaRotate = [

@@ -31,24 +31,6 @@ Shape
 </div>
 <div class="clear"></div>
 
-Form & List
------------
-<div class="iconList">
-	<div class="item">
-		<i class="icons" data-type="check" data-rotate="up"></i>
-		<code>check</code>
-	</div>
-	<div class="item">
-		<i class="icons" data-type="sort" data-rotate="up"></i>
-		<code>sort</code>
-	</div>
-	<div class="item">
-		<i class="icons" data-type="sort-half" data-rotate="up"></i>
-		<code>sort-half</code>
-	</div>
-</div>
-<div class="clear"></div>
-
 Math
 ----
 <div class="iconList">
@@ -67,6 +49,38 @@ Math
 	<div class="item">
 		<i class="icons" data-type="asterisk" data-rotate="up"></i>
 		<code>asterisk</code>
+	</div>
+</div>
+<div class="clear"></div>
+
+Form & List
+-----------
+<div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="check" data-rotate="up"></i>
+		<code>check</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="sort" data-rotate="up"></i>
+		<code>sort</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="sort-half" data-rotate="up"></i>
+		<code>sort-half</code>
+	</div>
+</div>
+<div class="clear"></div>
+
+Application
+-----------
+<div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="signal-three" data-rotate="up"></i>
+		<code>signal-three(m)</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="signal-five" data-rotate="up"></i>
+		<code>signal-five(m)</code>
 	</div>
 </div>
 <div class="clear"></div>

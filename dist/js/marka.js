@@ -27,6 +27,15 @@
     	'sort': 6,
     	'sort-half': 3,
 
+    	'signal-three-one': 3,
+    	'signal-three-two': 3,
+    	'signal-three': 3,
+    	'signal-five-one': 5,
+    	'signal-five-two': 5,
+    	'signal-five-three': 5,
+    	'signal-five-four': 5,
+    	'signal-five': 5,
+
     	'pause': 2,
 
     	'arrow': 3,
