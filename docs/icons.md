@@ -28,16 +28,16 @@ Shape
 		<i class="icons" data-type="triangle" data-rotate="up"></i>
 		<code>triangle</code>
 	</div>
-	<div class="item">
-		<i class="icons" data-type="bars" data-rotate="up"></i>
-		<code>bars</code>
-	</div>
 </div>
 <div class="clear"></div>
 
-Form
-----
+Form & List
+-----------
 <div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="check" data-rotate="up"></i>
+		<code>check</code>
+	</div>
 	<div class="item">
 		<i class="icons" data-type="sort" data-rotate="up"></i>
 		<code>sort</code>
@@ -84,6 +84,10 @@ Audio
 Navigation
 ----------
 <div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="bars" data-rotate="up"></i>
+		<code>bars</code>
+	</div>
 	<div class="item">
 		<i class="icons" data-type="chevron" data-rotate="up"></i>
 		<code>chevron</code>

@@ -26,8 +26,9 @@
     	'bars',
     	'chevron',
     	'arrow',
+    	'check',
     	'sort',
-    	'sort-half'
+    	'sort-half',
 	];
 
 	var markaRotate = [
