@@ -74,15 +74,7 @@
 		var el = this;
 
 		applyFunc(this.elements, function(i) {
-
-			// Change class			
-			i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
-			i.className += 'marka-icon-'+icon+' ';
-
-			if ('sizeValue' in el) {
-				i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
-			}
-
+			
 			var blockCount = i.childNodes.length;
 
 			// Append blocks
@@ -95,6 +87,26 @@
 					i.appendChild(span);
 				}
 			}
+
+			// Prevent blink transition
+			setTimeout(function() {
+
+				// Change class			
+				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
+				i.className += 'marka-icon-'+icon+' ';
+
+				if ('sizeValue' in el) {
+					i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
+				}
+
+				// Show icon if it's not shown
+				if (i.className.indexOf('marka-set') === -1) {
+					setTimeout(function() {
+						i.className += 'marka-set ';
+					}, 200);
+				}
+
+			}, 10);
 
 		});
 
