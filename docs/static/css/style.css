@@ -242,12 +242,21 @@ position:fixed;
   padding:15px 10px;
 }
 
+.iconList .item .icons {
+}
+
 .page .iconList .icons {
-  margin-right:5px;
+  display:block;
+  margin:10px auto;
   width:30px;
   height:30px;
   vertical-align:middle;
   cursor:pointer;
+}
+
+.page .content .iconList code {
+  display:block;
+  text-align:center;
 }
 
 /* FAQ */

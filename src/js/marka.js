@@ -10,8 +10,8 @@
     	'triangle': 3,
 
     	'minus': 1,
-    	'times': 1,
     	'plus': 2,
+    	'times': 2,
     	'asterisk': 3,
 
     	'sort': 6,
@@ -98,7 +98,7 @@
 				if ('sizeValue' in el) {
 					i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
 				}
-				
+
 				// Show icon if it's not shown
 				if (i.className.indexOf('marka-set') === -1) {
 					setTimeout(function() {

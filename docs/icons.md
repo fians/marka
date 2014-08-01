@@ -13,7 +13,7 @@ If you have idea for next icon that should
 be included in Marka, feel free to 
 [tell me](https://github.com/fians/marka/issues)!
 
-General Shape
+Shape
 -------------
 <div class="iconList">
 	<div class="item">
@@ -31,6 +31,20 @@ General Shape
 	<div class="item">
 		<i class="icons" data-type="bars" data-rotate="up"></i>
 		<code>bars</code>
+	</div>
+</div>
+<div class="clear"></div>
+
+Form
+----
+<div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="sort" data-rotate="up"></i>
+		<code>sort</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="sort-half" data-rotate="up"></i>
+		<code>sort-half</code>
 	</div>
 </div>
 <div class="clear"></div>
@@ -62,7 +76,7 @@ Audio
 <div class="iconList">
 	<div class="item">
 		<i class="icons" data-type="pause" data-rotate="up"></i>
-		<code>chevron</code>
+		<code>pause</code>
 	</div>
 </div>
 <div class="clear"></div>
