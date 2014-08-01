@@ -1,0 +1,13 @@
+
+/* Chevron icon */
+.marka.marka-icon-chevron i {
+    -webkit-transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
+    -moz-transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
+  	transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
+}
+
+.marka.marka-icon-chevron i:nth-child(2) {
+    -webkit-transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
+    -moz-transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
+  	transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
+}

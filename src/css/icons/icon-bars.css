@@ -1,0 +1,19 @@
+
+/* Bars icon */
+.marka.marka-icon-bars i {
+    -webkit-transform: scale(0.8, 0.2);
+    -moz-transform: scale(0.8, 0.2);
+    transform: scale(0.8, 0.2);
+}
+
+.marka.marka-icon-bars i:nth-child(2) {
+    -webkit-transform: scale(0.8, 0.2) translate(0%, -140%);
+    -moz-transform: scale(0.8, 0.2) translate(0%, -140%);
+  	transform: scale(0.8, 0.2) translate(0%, -140%);
+}
+
+.marka.marka-icon-bars i:nth-child(3) {
+    -webkit-transform: scale(0.8, 0.2) translate(0%, 140%);
+    -moz-transform: scale(0.8, 0.2) translate(0%, 140%);
+  	transform: scale(0.8, 0.2) translate(0%, 140%);
+}

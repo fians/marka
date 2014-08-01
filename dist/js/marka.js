@@ -1,29 +1,48 @@
 
-/*!
- * Marka v0.1.0
- * https://fian.my.id/marka
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/marka/blob/master/LICENSE
- */
+/*! 
+ * Marka - v0.2.0-dev 
+ * http://fian.my.id/marka 
+ * 
+ * Copyright 2014 Alfiana E. Sibuea and other contributors 
+ * Released under the MIT license 
+ * https://github.com/fians/marka/blob/master/LICENSE 
+ */ 
 
 ;(function(window) {
 	'use strict';
 
     // Blocks needed to create the icon
     var blockList = {
+
     	'circle': 1,
     	'square': 1,
     	'triangle': 3,
+
+    	'asterisk': 3,
     	'minus': 1,
     	'plus': 2,
-    	'times': 1,
-    	'asterisk': 3,
+    	'times': 2,
+
+    	'check': 2,
+    	'sort': 6,
+    	'sort-half': 3,
+
+    	'signal-three-one': 3,
+    	'signal-three-two': 3,
+    	'signal-three': 3,
+    	'signal-five-one': 5,
+    	'signal-five-two': 5,
+    	'signal-five-three': 5,
+    	'signal-five-four': 5,
+    	'signal-five': 5,
+
     	'pause': 2,
+
+    	'angle': 2,
+    	'angle-double': 4,
+    	'arrow': 3,
     	'bars': 3,
     	'chevron': 2,
-    	'arrow': 3
     };
 
     function applyFunc(el, callback) {
@@ -78,17 +97,11 @@
 
 		applyFunc(this.elements, function(i) {
 
-			// Change class			
-			i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
-			i.className += 'marka-icon-'+icon+' ';
+			var blockCount = i.childNodes.length;
 
-			if ('sizeValue' in el) {
-				i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
-			}
-
-			// Append span blocks
-			if (blockList[icon] > i.childNodes.length) {
-				for (var a = 0; a < (blockList[icon] - i.childNodes.length + 2); a++) {
+			// Append blocks
+			if (blockList[icon] > blockCount) {
+				for (var a = 0; a < (blockList[icon] - blockCount); a++) {
 					var span = document.createElement('i');
 					if ('colorValue' in el) {
 						span.setAttribute('style', 'background-color:'+el.colorValue);
@@ -96,6 +109,26 @@
 					i.appendChild(span);
 				}
 			}
+
+			// Prevent blink transition
+			setTimeout(function() {
+
+				// Change class			
+				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
+				i.className += 'marka-icon-'+icon+' ';
+
+				if ('sizeValue' in el) {
+					i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
+				}
+
+				// Show icon if it's not shown
+				if (i.className.indexOf('marka-set') === -1) {
+					setTimeout(function() {
+						i.className += 'marka-set ';
+					}, 200);
+				}
+
+			}, 10);
 
 		});
 

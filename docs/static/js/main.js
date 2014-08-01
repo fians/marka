@@ -15,17 +15,42 @@
 	};
 
 	var markaSet = [
+
+		// Shape
 		'circle',
     	'square',
     	'triangle',
+
+    	// Math
     	'minus',
     	'plus',
     	'times',
     	'asterisk',
+
+    	// Form & List
+    	'check',
+    	'sort',
+    	'sort-half',
+
+    	// App
+    	'signal-three-one',
+    	'signal-three-two',
+    	'signal-three',
+    	'signal-five-one',
+    	'signal-five-two',
+    	'signal-five-three',
+    	'signal-five-four',
+    	'signal-five',
+
+    	// Audio
     	'pause',
+
+    	// Navigation
     	'bars',
+    	'angle',
+    	'angle-double',
     	'chevron',
-    	'arrow'
+    	'arrow',
 	];
 
 	var markaRotate = [
