@@ -77,9 +77,11 @@
 				i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
 			}
 
-			// Append span blocks
-			if (blockList[icon] > i.childNodes.length) {
-				for (var a = 0; a < (blockList[icon] - i.childNodes.length + 2); a++) {
+			var blockCount = i.childNodes.length;
+
+			// Append blocks
+			if (blockList[icon] > blockCount) {
+				for (var a = 0; a < (blockList[icon] - blockCount); a++) {
 					var span = document.createElement('i');
 					if ('colorValue' in el) {
 						span.setAttribute('style', 'background-color:'+el.colorValue);

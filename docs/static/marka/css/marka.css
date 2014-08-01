@@ -55,17 +55,17 @@
 
 /* Arrow icon */
 .marka.marka-icon-arrow i {
-    -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
-    -moz-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
-    -ms-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
-    transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
+    -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%);
+    -moz-transform: rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%);
+    -ms-transform: rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%);
+    transform: rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%);
 }
 
 .marka.marka-icon-arrow i:nth-child(2) {
-    -webkit-transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
-    -moz-transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
-    -ms-transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
-    transform: rotate(134deg) scale(0.55, 0.2) translate(0%, 90%);
+    -webkit-transform: rotate(135deg) scale(0.55, 0.2) translate(-0.5%, 90%);
+    -moz-transform: rotate(135deg) scale(0.55, 0.2) translate(-0.5%, 90%);
+    -ms-transform: rotate(135deg) scale(0.55, 0.2) translate(-0.5%, 90%);
+    transform: rotate(135deg) scale(0.55, 0.2) translate(-0.5%, 90%);
 }
 
 .marka.marka-icon-arrow i:nth-child(3) {
@@ -121,17 +121,17 @@
 
 /* Chevron icon */
 .marka.marka-icon-chevron i {
-    -webkit-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
-    -moz-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
-    -ms-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
-  	transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
+    -webkit-transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
+    -moz-transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
+    -ms-transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
+  	transform: rotate(45deg) scale(0.6, 0.2) translate(16.5%, -50%);
 }
 
 .marka.marka-icon-chevron i:nth-child(2) {
-    -webkit-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
-    -moz-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
-    -ms-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
-  	transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
+    -webkit-transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
+    -moz-transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
+    -ms-transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
+  	transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
 }
 
 /* Circle icon */
