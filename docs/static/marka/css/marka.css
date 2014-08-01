@@ -55,6 +55,44 @@
     transform: rotate(180deg);
 }
 
+/* Angle icon */
+.marka.marka-icon-angle-double i {
+  	-webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  	-moz-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  	transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+}
+
+.marka.marka-icon-angle-double i:nth-child(2) {
+  	-webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  	-moz-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  	transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+}
+
+.marka.marka-icon-angle-double i:nth-child(3) {
+  	-webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  	-moz-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  	transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+}
+
+.marka.marka-icon-angle-double i:nth-child(4) {
+  	-webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  	-moz-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  	transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+}
+
+/* Angle icon */
+.marka.marka-icon-angle i {
+  	-webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
+  	-moz-transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
+  	transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
+}
+
+.marka.marka-icon-angle i:nth-child(2) {
+  	-webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
+  	-moz-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
+  	transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
+}
+
 /* Arrow icon */
 .marka.marka-icon-arrow i {
     -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%);

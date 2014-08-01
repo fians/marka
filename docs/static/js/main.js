@@ -47,6 +47,8 @@
 
     	// Navigation
     	'bars',
+    	'angle',
+    	'angle-double',
     	'chevron',
     	'arrow',
 	];

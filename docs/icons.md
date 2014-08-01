@@ -76,11 +76,11 @@ Application
 <div class="iconList">
 	<div class="item">
 		<i class="icons" data-type="signal-three" data-rotate="up"></i>
-		<code>signal-three(m)</code>
+		<code>signal-three</code>
 	</div>
 	<div class="item">
 		<i class="icons" data-type="signal-five" data-rotate="up"></i>
-		<code>signal-five(m)</code>
+		<code>signal-five</code>
 	</div>
 </div>
 <div class="clear"></div>
@@ -99,16 +99,24 @@ Navigation
 ----------
 <div class="iconList">
 	<div class="item">
+		<i class="icons" data-type="angle" data-rotate="up"></i>
+		<code>angle</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="angle-double" data-rotate="up"></i>
+		<code>angle-double</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="arrow" data-rotate="up"></i>
+		<code>arrow</code>
+	</div>
+	<div class="item">
 		<i class="icons" data-type="bars" data-rotate="up"></i>
 		<code>bars</code>
 	</div>
 	<div class="item">
 		<i class="icons" data-type="chevron" data-rotate="up"></i>
 		<code>chevron</code>
-	</div>
-	<div class="item">
-		<i class="icons" data-type="arrow" data-rotate="up"></i>
-		<code>arrow</code>
 	</div>
 </div>
 <div class="clear"></div>

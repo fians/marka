@@ -1,0 +1,13 @@
+
+/* Angle icon */
+.marka.marka-icon-angle i {
+  	-webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
+  	-moz-transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
+  	transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
+}
+
+.marka.marka-icon-angle i:nth-child(2) {
+  	-webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
+  	-moz-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
+  	transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
+}
