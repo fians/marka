@@ -4,16 +4,22 @@
 
     // Blocks needed to create the icon
     var blockList = {
+
     	'circle': 1,
     	'square': 1,
     	'triangle': 3,
+
     	'minus': 1,
-    	'plus': 2,
     	'times': 1,
+    	'plus': 2,
     	'asterisk': 3,
+
+    	'sort': 6,
+    	'sort-half': 3,
+
     	'pause': 2,
-    	'bars': 3,
     	'chevron': 2,
+    	'bars': 3,
     	'arrow': 3
     };
 
