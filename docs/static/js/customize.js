@@ -8,7 +8,7 @@
 
 	// Define variable
 	var choosenIcons = [];
-	var version = 'v0.2.0-dev';
+	var version = 'v0.2.0';
 
 	// Make sure ajax request is not cached
 	$.ajaxSetup({ cache: false });
