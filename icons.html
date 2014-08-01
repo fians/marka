@@ -7,7 +7,7 @@
 		<title>Icons - Marka</title>
 
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="./static/css/marka.css">
+		<link rel="stylesheet" type="text/css" href="./static/marka/css/marka.css">
 		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="./static/css/prism.css">
@@ -24,11 +24,11 @@
 		</script>
 	</head>
 	<body>
-		<div id="page">
+		<div class="page">
 			<div class="nav">
 				<h1><a href="./">Marka</a></h1>
 				<p>Beautiful icon transformations</p>
-				<p>(v0.1.0)</p>
+				<p>(v0.2.0)</p>
 
 				<div class="item">
 					<a href="./getting-started.html" class="button">Getting Started</a> 
@@ -39,18 +39,22 @@
 					<br>
 					<a href="./faq.html" class="button">FAQ</a>
 					<br>
+					<a href="./customize.html" class="button">Customize</a>
+					<br>
 					<a href="https://github.com/fians/marka/" class="button">Github</a>
 				</div>
 			</div>
 			<div class="content">
 				<h1 id="icons">Icons</h1>
 
-<p>Marka currently have 11 icons ready to use.
+<p>Marka currently have 18 icons ready to use and
+you can <a href="/customize.html">customize marka.css</a> 
+to pick icons based on your needs.
 If you have idea for next icon that should
 be included in Marka, feel free to 
 <a href="https://github.com/fians/marka/issues">tell me</a>!</p>
 
-<h2 id="general-shape">General Shape</h2>
+<h2 id="shape">Shape</h2>
 <div class="iconList">
 	<div class="item">
 		<i class="icons" data-type="circle" data-rotate="up"></i>
@@ -63,10 +67,6 @@ be included in Marka, feel free to
 	<div class="item">
 		<i class="icons" data-type="triangle" data-rotate="up"></i>
 		<code>triangle</code>
-	</div>
-	<div class="item">
-		<i class="icons" data-type="bars" data-rotate="up"></i>
-		<code>bars</code>
 	</div>
 </div>
 <div class="clear"></div>
@@ -92,6 +92,36 @@ be included in Marka, feel free to
 </div>
 <div class="clear"></div>
 
+<h2 id="form--list">Form &amp; List</h2>
+<div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="check" data-rotate="up"></i>
+		<code>check</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="sort" data-rotate="up"></i>
+		<code>sort</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="sort-half" data-rotate="up"></i>
+		<code>sort-half</code>
+	</div>
+</div>
+<div class="clear"></div>
+
+<h2 id="application">Application</h2>
+<div class="iconList">
+	<div class="item">
+		<i class="icons" data-type="signal-three" data-rotate="up"></i>
+		<code>signal-three</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="signal-five" data-rotate="up"></i>
+		<code>signal-five</code>
+	</div>
+</div>
+<div class="clear"></div>
+
 <h2 id="audio">Audio</h2>
 <div class="iconList">
 	<div class="item">
@@ -104,12 +134,24 @@ be included in Marka, feel free to
 <h2 id="navigation">Navigation</h2>
 <div class="iconList">
 	<div class="item">
-		<i class="icons" data-type="chevron" data-rotate="up"></i>
-		<code>chevron</code>
+		<i class="icons" data-type="angle" data-rotate="up"></i>
+		<code>angle</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="angle-double" data-rotate="up"></i>
+		<code>angle-double</code>
 	</div>
 	<div class="item">
 		<i class="icons" data-type="arrow" data-rotate="up"></i>
 		<code>arrow</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="bars" data-rotate="up"></i>
+		<code>bars</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="chevron" data-rotate="up"></i>
+		<code>chevron</code>
 	</div>
 </div>
 <div class="clear"></div>
@@ -120,7 +162,7 @@ be included in Marka, feel free to
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="./static/js/marka.js"></script>
+		<script type="text/javascript" src="./static/marka/js/marka.js"></script>
 		<script type="text/javascript" src="./static/js/jquery.min.js"></script>
 		<script type="text/javascript" src="./static/js/prism.js"></script>
 		<script type="text/javascript" src="./static/js/main.js"></script>

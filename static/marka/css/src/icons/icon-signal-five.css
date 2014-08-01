@@ -1,0 +1,47 @@
+
+/* Signal icon (5 part) */
+.marka.marka-icon-signal-five-one i,
+.marka.marka-icon-signal-five-two i,
+.marka.marka-icon-signal-five-three i,
+.marka.marka-icon-signal-five-four i,
+.marka.marka-icon-signal-five i {
+  	-webkit-transform: rotate(90deg) scale(0.16, 0.12) translate(200%, 280%);
+  	-moz-transform: rotate(90deg) scale(0.16, 0.12) translate(200%, 280%);
+  	transform: rotate(90deg) scale(0.16, 0.12) translate(200%, 280%);
+}
+
+.marka.marka-icon-signal-five-two i:nth-child(2),
+.marka.marka-icon-signal-five-two i:nth-child(3),
+.marka.marka-icon-signal-five-two i:nth-child(4),
+.marka.marka-icon-signal-five-two i:nth-child(5),
+.marka.marka-icon-signal-five-three i:nth-child(2),
+.marka.marka-icon-signal-five-four i:nth-child(2),
+.marka.marka-icon-signal-five i:nth-child(2) {
+    -webkit-transform: rotate(90deg) scale(0.32, 0.12) translate(75%, 140%);
+    -moz-transform: rotate(90deg) scale(0.32, 0.12) translate(75%, 140%);
+    transform: rotate(90deg) scale(0.32, 0.12) translate(75%, 140%);
+}
+
+.marka.marka-icon-signal-five-three i:nth-child(3),
+.marka.marka-icon-signal-five-three i:nth-child(4),
+.marka.marka-icon-signal-five-three i:nth-child(5),
+.marka.marka-icon-signal-five-four i:nth-child(3),
+.marka.marka-icon-signal-five i:nth-child(3) {
+  	-webkit-transform: rotate(90deg) scale(0.48, 0.12) translate(34%, 0%);
+  	-moz-transform: rotate(90deg) scale(0.48, 0.12) translate(34%, 0%);
+  	transform: rotate(90deg) scale(0.48, 0.12) translate(34%, 0%);
+}
+
+.marka.marka-icon-signal-five-four i:nth-child(4),
+.marka.marka-icon-signal-five-four i:nth-child(5),
+.marka.marka-icon-signal-five i:nth-child(4) {
+  	-webkit-transform: rotate(90deg) scale(0.64, 0.12) translate(13%, -140%);
+  	-moz-transform: rotate(90deg) scale(0.64, 0.12) translate(13%, -140%);
+  	transform: rotate(90deg) scale(0.64, 0.12) translate(13%, -140%);
+}
+
+.marka.marka-icon-signal-five i:nth-child(5) {
+  	-webkit-transform: rotate(90deg) scale(0.8, 0.12) translate(0%, -280%);
+  	-moz-transform: rotate(90deg) scale(0.8, 0.12) translate(0%, -280%);
+  	transform: rotate(90deg) scale(0.8, 0.12) translate(0%, -280%);
+}
