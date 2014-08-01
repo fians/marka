@@ -1,11 +1,12 @@
-/*!
- * Marka v0.2.0-dev
- * https://fian.my.id/marka
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/marka/blob/master/LICENSE
- */
+
+/*! 
+ * Marka - v0.2.0-dev 
+ * http://fian.my.id/marka 
+ * 
+ * Copyright 2014 Alfiana E. Sibuea and other contributors 
+ * Released under the MIT license 
+ * https://github.com/fians/marka/blob/master/LICENSE 
+ */ 
 
 /* Core style */
 .marka {
@@ -51,6 +52,7 @@
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
 /* Arrow icon */
 .marka.marka-icon-arrow i {
     -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(0%, -90%);
@@ -72,8 +74,8 @@
     -ms-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
     transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
 }
-/* Asterisk icon */
 
+/* Asterisk icon */
 .marka.marka-icon-asterisk i {
     -webkit-transform: rotate(90deg) scale(0.8, 0.2);
     -moz-transform: rotate(90deg) scale(0.8, 0.2);
@@ -94,8 +96,8 @@
     -ms-transform: rotate(30deg) scale(0.8, 0.2);
     transform: rotate(30deg) scale(0.8, 0.2);
 }
-/* Bars icon */
 
+/* Bars icon */
 .marka.marka-icon-bars i {
     -webkit-transform: scale(0.8, 0.2);
     -moz-transform: scale(0.8, 0.2);
@@ -116,8 +118,8 @@
     -ms-transform: scale(0.8, 0.2) translate(0%, 140%);
   	transform: scale(0.8, 0.2) translate(0%, 140%);
 }
-/* Chevron icon */
 
+/* Chevron icon */
 .marka.marka-icon-chevron i {
     -webkit-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
     -moz-transform: rotate(45deg) scale(0.6, 0.2) translate(17%, -50%);
@@ -131,8 +133,8 @@
     -ms-transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
   	transform: rotate(134deg) scale(0.6, 0.2) translate(17%, 50%);
 }
-/* Circle icon */
 
+/* Circle icon */
 .marka.marka-icon-circle i {
     border-radius: 50%;
     -webkit-transform: scale(0.8);
@@ -140,16 +142,16 @@
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
-/* Minus icon */
 
+/* Minus icon */
 .marka.marka-icon-minus i {
     -webkit-transform: scale(0.8, 0.2);
     -moz-transform: scale(0.8, 0.2);
     -ms-transform: scale(0.8, 0.2);
     transform: scale(0.8, 0.2);
 }
-/* Pause icon */
 
+/* Pause icon */
 .marka.marka-icon-pause i {
     -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
     -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
@@ -163,8 +165,8 @@
     -ms-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
 	transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
 }
-/* Plus icon */
 
+/* Plus icon */
 .marka.marka-icon-plus i {
     -webkit-transform: scale(0.8, 0.2);
     -moz-transform: scale(0.8, 0.2);
@@ -178,8 +180,8 @@
     -ms-transform: rotate(90deg) scale(0.8, 0.2);
     transform: rotate(90deg) scale(0.8, 0.2);
 }
-/* Square icon */
 
+/* Square icon */
 .marka.marka-icon-square i {
     border-radius: 10%;
     -webkit-transform: scale(0.8);
@@ -187,6 +189,7 @@
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
+
 /* Times icon */
 .marka.marka-icon-times i {
     -webkit-transform: rotate(45deg) scale(0.8, 0.2);
@@ -201,8 +204,8 @@
     -ms-transform: rotate(-45deg) scale(0.8, 0.2);
     transform: rotate(-45deg) scale(0.8, 0.2);
 }
-/* Triangle icon */
 
+/* Triangle icon */
 .marka.marka-icon-triangle i {
     border-radius: 0% 30% 0 30%;
     -webkit-transform: rotate(-60deg) skewX(-30deg) scale(0.5,.433) translate(2%, -5%);

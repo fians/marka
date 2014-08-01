@@ -1,6 +1,5 @@
 
 /* Triangle icon */
-
 .marka.marka-icon-triangle i {
     border-radius: 0% 30% 0 30%;
     -webkit-transform: rotate(-60deg) skewX(-30deg) scale(0.5,.433) translate(2%, -5%);

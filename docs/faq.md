@@ -11,5 +11,8 @@ FAQ
 	So, it should work on latest version of Chrome, Mozilla, Safari
 	and Opera. And off course IE10+.
 
+3. **I just need a couple icons, can I select icons base on my needs?**
+	- Yes, you can customize it [here](/customize.html).
+
 2. **I found a bug, where should I reported to?**
 	- Oh, great! Just report the issue in [Marka's Github repo](https://github.com/fians/marka/issues).

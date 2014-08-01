@@ -86,7 +86,9 @@ Set Icon
 --------
 
 Marka currently have [11 icons](/icons.html) ready to use, 
-and you can see all those icons here. To set icon 
+and you can see all those icons here. If you feel you didn't
+need all Marka icons, you can [customize marka.css](/customize.html) to pick 
+icons based on your needs. To set icon 
 you can use `set()` on Marka instance.
 
 ~~~javascript

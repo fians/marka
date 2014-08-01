@@ -1,17 +1,34 @@
 module.exports = function(grunt) {
     grunt.initConfig({
 
-        concat_css: {
-            all: {
-                src: ['src/css/marka-core.css', 'src/css/icons/*.css'],
-                dest: 'dist/css/marka-all.css'
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Add license
+        concat: {
+            options: {
+              banner: '\n/*! \n' 
+                +' * Marka - v<%= pkg.version %> \n' 
+                +' * http://fian.my.id/marka \n' 
+                +' * \n' 
+                +' * Copyright 2014 Alfiana E. Sibuea and other contributors \n' 
+                +' * Released under the MIT license \n' 
+                +' * https://github.com/fians/marka/blob/master/LICENSE \n' 
+                +' */ \n',
             },
+            css: {
+                src: ['src/css/marka-core.css', 'src/css/icons/*.css'],
+                dest: 'dist/css/marka.css'
+            },
+            js: {
+                src: ['src/js/marka.js'],
+                dest: 'dist/js/marka.js'
+            }
         },
 
         cssmin: {
             minify: {
                 files: {
-                    'dist/css/marka-all.min.css': ['dist/css/marka-all.css']
+                    'dist/css/marka.min.css': ['dist/css/marka.css']
                 }
             }
         },
@@ -39,41 +56,41 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'dist/js/marka.min.js': ['src/js/marka.js']
+                    'dist/js/marka.min.js': ['dist/js/marka.js']
                 }
             }
         },
 
+        // Copy compiled file to docs
         copy: {
-            dist: {
-                expand : true,
-                cwd: 'src/',
-                src: '**',
-                dest: 'dist/',
-            },
-			docjs: {
+			distJSToDocs: {
                 expand : true,
                 cwd: 'dist/js/',
 				src: 'marka.js',
-				dest: 'docs/static/js',
+				dest: 'docs/static/marka/js'
 			},
-            doccss: {
+            distCSStoDocs: {
                 expand : true,
                 cwd: 'dist/css/',
                 src: '**',
-                dest: 'docs/static/css/marka',
+                dest: 'docs/static/marka/css/'
+            },
+            srcCSStoDocs: {
+                expand: true,
+                cwd: 'src/css/',
+                src: '**/*.css',
+                dest: 'docs/static/marka/css/src'
             }
 		},
         
         watch: {
-            
             script: {
                options: {
                     spawn: false,
                     event: ['added', 'deleted', 'changed']
                 },
                 files: ['src/**/*'],
-                tasks: ['concat_css', 'cssmin', 'jshint', 'uglify', 'copy']
+                tasks: ['concat', 'cssmin', 'jshint', 'uglify', 'copy']
             },
             grunt: {
                 files: ['Gruntfile.js']
@@ -82,7 +99,7 @@ module.exports = function(grunt) {
     });
     
     // Load module
-    grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');

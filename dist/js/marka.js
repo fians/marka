@@ -1,12 +1,12 @@
 
-/*!
- * Marka v0.2.0-dev
- * https://fian.my.id/marka
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/marka/blob/master/LICENSE
- */
+/*! 
+ * Marka - v0.2.0-dev 
+ * http://fian.my.id/marka 
+ * 
+ * Copyright 2014 Alfiana E. Sibuea and other contributors 
+ * Released under the MIT license 
+ * https://github.com/fians/marka/blob/master/LICENSE 
+ */ 
 
 ;(function(window) {
 	'use strict';

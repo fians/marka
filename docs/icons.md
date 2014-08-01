@@ -6,7 +6,9 @@ title: Icons - Marka
 Icons
 =====
 
-Marka currently have 11 icons ready to use.
+Marka currently have 11 icons ready to use and
+you can [customize marka.css](/customize.html) 
+to pick icons based on your needs.
 If you have idea for next icon that should
 be included in Marka, feel free to 
 [tell me](https://github.com/fians/marka/issues)!
