@@ -28,6 +28,7 @@
     	'signal-five': 5,
 
     	'pause': 2,
+    	'backward': 6,
 
     	'angle': 2,
     	'angle-double': 4,

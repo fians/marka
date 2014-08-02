@@ -44,6 +44,7 @@
 
     	// Audio
     	'pause',
+    	'backward',
 
     	// Navigation
     	'bars',
