@@ -1,20 +1,23 @@
-
 /* Sort half icon */
 .marka.marka-icon-sort-half i {
-    border-radius: 0% 30% 0 30%;
-    -webkit-transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
-    -moz-transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
-    transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
+  border-radius: 0% 30% 0 30%;
+  -webkit-transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
+  -moz-transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
+  -ms-transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
+  -o-transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
+  transform: rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%);
 }
-
 .marka.marka-icon-sort-half i:nth-child(2) {
-    -webkit-transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
-    -moz-transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
-    transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
+  -webkit-transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
+  -moz-transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
+  -ms-transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
+  -o-transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
+  transform: rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%);
 }
-
 .marka.marka-icon-sort-half i:nth-child(3) {
-    -webkit-transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
-    -moz-transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
-    transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
+  -webkit-transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
+  -moz-transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
+  -ms-transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
+  -o-transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
+  transform: rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%);
 }

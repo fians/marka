@@ -1,23 +1,26 @@
-
 /* Signal icon (3 parts) */
 .marka.marka-icon-signal-three-one i,
 .marka.marka-icon-signal-three-two i,
 .marka.marka-icon-signal-three i {
-  	-webkit-transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
-  	-moz-transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
-  	transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
+  -webkit-transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
+  -moz-transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
+  -ms-transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
+  -o-transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
+  transform: rotate(90deg) scale(0.24, 0.2) translate(120%, 140%);
 }
-
 .marka.marka-icon-signal-three-two i:nth-child(2),
 .marka.marka-icon-signal-three-two i:nth-child(3),
 .marka.marka-icon-signal-three i:nth-child(2) {
-    -webkit-transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
-    -moz-transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
-    transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
+  -webkit-transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
+  -moz-transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
+  -ms-transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
+  -o-transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
+  transform: rotate(90deg) scale(0.48, 0.2) translate(35%, 0%);
 }
-
 .marka.marka-icon-signal-three i:nth-child(3) {
-  	-webkit-transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
-  	-moz-transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
-  	transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
+  -webkit-transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
+  -moz-transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
+  -ms-transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
+  -o-transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
+  transform: rotate(90deg) scale(0.8, 0.2) translate(0%, -140%);
 }

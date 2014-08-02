@@ -1,13 +1,15 @@
-
 /* Check icon */
 .marka.marka-icon-check i {
-    -webkit-transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
-    -moz-transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
-    transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
+  -webkit-transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
+  -moz-transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
+  -ms-transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
+  -o-transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
+  transform: rotate(-45deg) scale(0.75, 0.2) translate(10%, 50%);
 }
-
 .marka.marka-icon-check i:nth-child(2) {
-    -webkit-transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
-    -moz-transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
-    transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
+  -webkit-transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
+  -moz-transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
+  -ms-transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
+  -o-transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
+  transform: rotate(45deg) scale(0.5, 0.2) translate(-10%, 120%);
 }
