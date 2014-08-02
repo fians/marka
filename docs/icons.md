@@ -6,7 +6,7 @@ title: Icons - Marka
 Icons
 =====
 
-Marka currently have 19 icons ready to use and
+Marka currently have 20 icons ready to use and
 you can [customize marka.css](./customize.html) 
 to pick icons based on your needs.
 If you have idea for next icon that should
@@ -91,6 +91,10 @@ Audio
 	<div class="item">
 		<i class="icons" data-type="pause" data-rotate="up"></i>
 		<code>pause</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="forward" data-rotate="up"></i>
+		<code>forward</code>
 	</div>
 	<div class="item">
 		<i class="icons" data-type="backward" data-rotate="up"></i>

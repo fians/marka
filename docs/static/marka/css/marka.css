@@ -148,7 +148,7 @@
 
 /* Backward icon */
 .marka.marka-icon-backward i {
-  border-radius: 0% 0% 0 30%;
+  border-radius: 0 0 0 30%;
   -webkit-transform: rotate(-150deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
   -moz-transform: rotate(-150deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
   -ms-transform: rotate(-150deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
@@ -254,6 +254,51 @@
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
   transform: scale(0.8);
+}
+
+/* Forward Icon */
+.marka.marka-icon-forward i {
+  border-radius: 0 0 0 30%;
+  -webkit-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
+  -moz-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
+  -ms-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
+  -o-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
+  transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
+}
+.marka.marka-icon-forward i:nth-child(2) {
+  -webkit-transform: rotate(270deg) skewX(-30deg) scale(0.2) translate(55%, 60%);
+  -moz-transform: rotate(270deg) skewX(-30deg) scale(0.2) translate(55%, 60%);
+  -ms-transform: rotate(270deg) skewX(-30deg) scale(0.2) translate(55%, 60%);
+  -o-transform: rotate(270deg) skewX(-30deg) scale(0.2) translate(55%, 60%);
+  transform: rotate(270deg) skewX(-30deg) scale(0.2) translate(55%, 60%);
+}
+.marka.marka-icon-forward i:nth-child(3) {
+  -webkit-transform: rotate(180deg) skewY(-30deg) scale(0.2) translate(-60%, -55%);
+  -moz-transform: rotate(180deg) skewY(-30deg) scale(0.2) translate(-60%, -55%);
+  -ms-transform: rotate(180deg) skewY(-30deg) scale(0.2) translate(-60%, -55%);
+  -o-transform: rotate(180deg) skewY(-30deg) scale(0.2) translate(-60%, -55%);
+  transform: rotate(180deg) skewY(-30deg) scale(0.2) translate(-60%, -55%);
+}
+.marka.marka-icon-forward i:nth-child(4) {
+  -webkit-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(-50%, 50%);
+  -moz-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(-50%, 50%);
+  -ms-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(-50%, 50%);
+  -o-transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(-50%, 50%);
+  transform: rotate(30deg) skewX(-30deg) scale(0.2, 0.172) translate(-50%, 50%);
+}
+.marka.marka-icon-forward i:nth-child(5) {
+  -webkit-transform: rotate(-210deg) skewX(-30deg) scale(0.2) translate(150%, 50%);
+  -moz-transform: rotate(-210deg) skewX(-30deg) scale(0.2) translate(150%, 50%);
+  -ms-transform: rotate(-210deg) skewX(-30deg) scale(0.2) translate(150%, 50%);
+  -o-transform: rotate(-210deg) skewX(-30deg) scale(0.2) translate(150%, 50%);
+  transform: rotate(-210deg) skewX(-30deg) scale(0.2) translate(150%, 50%);
+}
+.marka.marka-icon-forward i:nth-child(6) {
+  -webkit-transform: rotate(-60deg) skewY(-30deg) scale(0.2) translate(-50%, -150%);
+  -moz-transform: rotate(-60deg) skewY(-30deg) scale(0.2) translate(-50%, -150%);
+  -ms-transform: rotate(-60deg) skewY(-30deg) scale(0.2) translate(-50%, -150%);
+  -o-transform: rotate(-60deg) skewY(-30deg) scale(0.2) translate(-50%, -150%);
+  transform: rotate(-60deg) skewY(-30deg) scale(0.2) translate(-50%, -150%);
 }
 
 /* Minus icon */

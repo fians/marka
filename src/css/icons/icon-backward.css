@@ -1,6 +1,6 @@
 /* Backward icon */
 .marka.marka-icon-backward i {
-  border-radius: 0% 0% 0 30%;
+  border-radius: 0 0 0 30%;
   -webkit-transform: rotate(-150deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
   -moz-transform: rotate(-150deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
   -ms-transform: rotate(-150deg) skewX(-30deg) scale(0.2, 0.172) translate(55%, -55%);
