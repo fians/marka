@@ -1,0 +1,36 @@
+
+/* Core style */
+@import "mixin.less";
+
+.marka {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    .transition(all 500ms);
+	
+	i {
+	    position: absolute;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0;
+	    background: #000000;
+	    .transition(all 500ms);
+    }
+
+    &.marka-set i {
+		opacity: 1;
+	}
+
+	&.marka-rotate-right {
+		.transition(rotate(90deg));
+	}
+
+	&.marka-rotate-left {
+		.transition(rotate(-90deg));
+	}
+
+	&.marka-rotate-down {
+		.transition(rotate(180deg));
+	}
+}

@@ -1,13 +1,15 @@
-
 /* Plus icon */
 .marka.marka-icon-plus i {
-    -webkit-transform: scale(0.8, 0.2);
-    -moz-transform: scale(0.8, 0.2);
-    transform: scale(0.8, 0.2);
+  -webkit-transform: scale(0.8, 0.2);
+  -moz-transform: scale(0.8, 0.2);
+  -ms-transform: scale(0.8, 0.2);
+  -o-transform: scale(0.8, 0.2);
+  transform: scale(0.8, 0.2);
 }
-
 .marka.marka-icon-plus i:nth-child(2) {
-    -webkit-transform: rotate(90deg) scale(0.8, 0.2);
-    -moz-transform: rotate(90deg) scale(0.8, 0.2);
-    transform: rotate(90deg) scale(0.8, 0.2);
+  -webkit-transform: rotate(90deg) scale(0.8, 0.2);
+  -moz-transform: rotate(90deg) scale(0.8, 0.2);
+  -ms-transform: rotate(90deg) scale(0.8, 0.2);
+  -o-transform: rotate(90deg) scale(0.8, 0.2);
+  transform: rotate(90deg) scale(0.8, 0.2);
 }

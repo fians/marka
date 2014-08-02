@@ -1,0 +1,16 @@
+@import "../mixin.less";
+
+/* Sort half icon */
+.marka.marka-icon-sort-half i {
+    border-radius: 0% 30% 0 30%;
+    .transform(rotate(-60deg) skewX(-30deg) scale(0.25, 0.216) translate(60%, -60%));
+
+    &:nth-child(2) {
+        .transform(rotate(0deg) skewX(-30deg) scale(0.25) translate(-60%, -70%));
+    }
+
+    &:nth-child(3) {
+        .transform(rotate(90deg) skewY(-30deg) scale(0.25) translate(-70%, -60%));
+    }
+}
+

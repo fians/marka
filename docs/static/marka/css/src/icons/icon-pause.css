@@ -1,13 +1,15 @@
-
 /* Pause icon */
 .marka.marka-icon-pause i {
-    -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
-    -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
-	transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+  -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+  -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+  -ms-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+  -o-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
+  transform: rotate(90deg) scale(0.8, 0.35) translate(0%, 65%);
 }
-
 .marka.marka-icon-pause i:nth-child(2) {
-    -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
-    -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
-	transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+  -webkit-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+  -moz-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+  -ms-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+  -o-transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
+  transform: rotate(90deg) scale(0.8, 0.35) translate(0%, -65%);
 }

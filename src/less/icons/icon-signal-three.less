@@ -1,0 +1,18 @@
+@import "../mixin.less";
+
+/* Signal icon (3 parts) */
+.marka.marka-icon-signal-three-one i,
+.marka.marka-icon-signal-three-two i,
+.marka.marka-icon-signal-three i {
+  	.transform(rotate(90deg) scale(0.24, 0.2) translate(120%, 140%));
+}
+
+.marka.marka-icon-signal-three-two i:nth-child(2),
+.marka.marka-icon-signal-three-two i:nth-child(3),
+.marka.marka-icon-signal-three i:nth-child(2) {
+    .transform(rotate(90deg) scale(0.48, 0.2) translate(35%, 0%));
+}
+
+.marka.marka-icon-signal-three i:nth-child(3) {
+  	.transform(rotate(90deg) scale(0.8, 0.2) translate(0%, -140%));
+}

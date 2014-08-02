@@ -1,0 +1,18 @@
+@import "../mixin.less";
+
+/* Angle icon */
+.marka.marka-icon-angle-double i {
+    .transform(rotate(45deg) scale(0.4, 0.1) translate(0%, -150%));
+
+    &:nth-child(2) {
+        .transform(rotate(135deg) scale(0.4, 0.1) translate(0%, 150%));
+    }
+
+    &:nth-child(3) {
+        .transform(rotate(45deg) scale(0.4, 0.1) translate(40%, 10%));
+    }
+
+    &:nth-child(4) {
+        .transform(rotate(135deg) scale(0.4, 0.1) translate(40%, -10%));
+    }
+}

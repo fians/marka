@@ -1,8 +1,9 @@
-
 /* Circle icon */
 .marka.marka-icon-circle i {
-    border-radius: 50%;
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    transform: scale(0.8);
+  border-radius: 50%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
 }

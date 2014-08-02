@@ -3,6 +3,21 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        // Compile all LESS files individually
+        less: {
+            compile: {
+                options: {
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/less',
+                    src: ['**/*.less', '!{boot,var,mix}*.less'],
+                    dest: 'src/css/',
+                    ext: '.css'
+                }]
+            }
+        },
+
         // Add license
         concat: {
             options: {
@@ -90,7 +105,7 @@ module.exports = function(grunt) {
                     event: ['added', 'deleted', 'changed']
                 },
                 files: ['src/**/*'],
-                tasks: ['concat', 'cssmin', 'jshint', 'uglify', 'copy']
+                tasks: ['less', 'concat', 'cssmin', 'jshint', 'uglify', 'copy']
             },
             grunt: {
                 files: ['Gruntfile.js']
@@ -99,6 +114,7 @@ module.exports = function(grunt) {
     });
     
     // Load module
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');

@@ -1,0 +1,16 @@
+@import "../mixin.less";
+
+/* Triangle icon */
+.marka.marka-icon-triangle i {
+    border-radius: 0% 30% 0 30%;
+    .transform(rotate(-60deg) skewX(-30deg) scale(0.5,.433) translate(2%, -5%));
+
+    &:nth-child(2) {
+        .transform(rotate(-0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%));
+    }
+
+    &:nth-child(3) {
+        .transform(rotate(90deg) skewY(-30deg) scale(0.5) translate(30%, -2%));
+    }
+}
+

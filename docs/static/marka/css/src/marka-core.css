@@ -1,47 +1,43 @@
-
 /* Core style */
 .marka {
-    position: relative;
-    display: inline-block;
-    vertical-align: bottom;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
 }
-
 .marka i {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: #000000;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #000000;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
 }
-
-.marka-set i {
-    opacity: 1;
+.marka.marka-set i {
+  opacity: 1;
 }
-
-/* Rotation */
 .marka.marka-rotate-right {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
+  -webkit-transition: rotate(90deg);
+  -moz-transition: rotate(90deg);
+  -o-transition: rotate(90deg);
+  transition: rotate(90deg);
 }
-
 .marka.marka-rotate-left {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+  -webkit-transition: rotate(-90deg);
+  -moz-transition: rotate(-90deg);
+  -o-transition: rotate(-90deg);
+  transition: rotate(-90deg);
 }
-
 .marka.marka-rotate-down {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
+  -webkit-transition: rotate(180deg);
+  -moz-transition: rotate(180deg);
+  -o-transition: rotate(180deg);
+  transition: rotate(180deg);
 }

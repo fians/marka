@@ -1,25 +1,29 @@
-
 /* Angle icon */
 .marka.marka-icon-angle-double i {
-  	-webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
-  	-moz-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
-  	transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  -webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  -moz-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  -ms-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  -o-transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
+  transform: rotate(45deg) scale(0.4, 0.1) translate(0%, -150%);
 }
-
 .marka.marka-icon-angle-double i:nth-child(2) {
-  	-webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
-  	-moz-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
-  	transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  -webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  -moz-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  -ms-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  -o-transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
+  transform: rotate(135deg) scale(0.4, 0.1) translate(0%, 150%);
 }
-
 .marka.marka-icon-angle-double i:nth-child(3) {
-  	-webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
-  	-moz-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
-  	transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  -webkit-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  -moz-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  -ms-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  -o-transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
+  transform: rotate(45deg) scale(0.4, 0.1) translate(40%, 10%);
 }
-
 .marka.marka-icon-angle-double i:nth-child(4) {
-  	-webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
-  	-moz-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
-  	transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  -webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  -moz-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  -ms-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  -o-transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
+  transform: rotate(135deg) scale(0.4, 0.1) translate(40%, -10%);
 }

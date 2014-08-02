@@ -1,0 +1,15 @@
+@import "../mixin.less";
+
+/* Arrow icon */
+.marka.marka-icon-arrow i {
+    .transform(rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%));
+
+    &:nth-child(2) {
+	    .transform(rotate(135deg) scale(0.55, 0.2) translate(-0.5%, 90%));
+	}
+
+	&:nth-child(3) {
+	    .transform(rotate(90deg) scale(0.6, 0.2) translate(17%, 0%));
+	}
+}
+
