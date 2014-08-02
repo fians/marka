@@ -17,8 +17,8 @@ ready to use.
 <html>
     <head>
         <title>My Website</title>
-        <link rel="stylesheet" href="/path/to/marka.min.js">
-        <script src="/path/to/marka.min.css"></script>
+        <link rel="stylesheet" href="/path/to/marka.min.css">
+        <script src="/path/to/marka.min.js"></script>
     </head>
     <body>
     </body>
