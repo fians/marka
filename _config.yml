@@ -7,5 +7,4 @@ source:           docs
 destination:      _docs_site
 host:             127.0.0.1
 port:             4000
-baseurl:		  /marka
 encoding:         UTF-8
