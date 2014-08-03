@@ -84,6 +84,26 @@
 		}
 
 		applyFunc(this.elements, function(i) {
+
+			// Set background color
+			var parent = i.parentNode, 
+				backgroundColor = 'rgba(0, 0, 0, 0)';
+
+			do {
+				backgroundColor = window.getComputedStyle(parent)['background-color'];
+				parent = parent.parentNode;
+				if (backgroundColor !== 'rgba(0, 0, 0, 0)') {
+					break;
+				}
+
+			} while ('tagName' in parent);
+
+			if (backgroundColor === 'rgba(0, 0, 0, 0)') {
+				backgroundColor = 'rgb(255, 255, 255)';
+			}
+
+			i.setAttribute('data-bg', backgroundColor);
+
 			if (i.className.indexOf('marka') === -1) {
 				i.className += ' marka ';
 			}
