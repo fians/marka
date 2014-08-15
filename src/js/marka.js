@@ -35,7 +35,7 @@
     	'angle-double': 4,
     	'arrow': 3,
     	'bars': 3,
-    	'chevron': 2,
+    	'chevron': 2
     };
 
     function applyFunc(el, callback) {
@@ -90,7 +90,7 @@
 
 		applyFunc(this.elements, function(i) {
 
-			var blockCount = i.childNodes.length;
+			var blockCount = i.children.length;
 
 			// Append blocks
 			if (blockList[icon] > blockCount) {
@@ -133,8 +133,8 @@
 		this.colorValue = color;
 
 		applyFunc(this.elements, function(i) {
-			for (var a = 0; a < i.childNodes.length; a++) {
-				i.childNodes[a].setAttribute('style', 'background-color:'+color);
+			for (var a = 0; a < i.children.length; a++) {
+				i.children[a].setAttribute('style', 'background-color:'+color);
 			}
 		});	
 
