@@ -1,6 +1,6 @@
 
 /*! 
- * Marka - v0.2.0 
+ * Marka - v0.3.0-dev 
  * http://fian.my.id/marka 
  * 
  * Copyright 2014 Alfiana E. Sibuea and other contributors 
@@ -92,7 +92,7 @@
   -o-transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
   transform: rotate(45deg) scale(0.4, 0.1) translate(20%, -75%);
 }
-.marka.marka-icon-angle i:nth-child(2) {
+.marka.marka-icon-angle i:nth-child(2n) {
   -webkit-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
   -moz-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
   -ms-transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
