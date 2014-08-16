@@ -53,6 +53,13 @@
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+.marka.marka-icon-empty {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
 
 /* Angle icon */
 .marka.marka-icon-angle-double i {
