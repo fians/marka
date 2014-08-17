@@ -17,7 +17,8 @@
     	'circle': 2,
     	'circle-o': 3,
     	'circle-o-filled': 3,
-    	'circle-minus': 2,
+    	'circle-minus': 3,
+    	'circle-plus': 3,
 
     	'square': 1,
     	'triangle': 3,
@@ -50,9 +51,10 @@
     };
 
     var invertedIndex = {
-    	'circle-o': 1,
-    	'circle-o-filled': 1,
-    	'circle-minus': 1,
+    	'circle-o': [1],
+    	'circle-o-filled': [1],
+    	'circle-minus': 'last',
+    	'circle-plus': 'last-two',
     };
 
     function applyFunc(el, callback) {
@@ -157,10 +159,16 @@
 			var invertedBlock = [];
 
 			if (invertedIndex.hasOwnProperty(icon)) {
-				if (invertedIndex[icon] === 'last') {
-					invertedBlock.push((blockCount-1));
-				} else {
-					invertedBlock.push(invertedIndex[icon]);
+
+				switch (invertedIndex[icon]) {
+					case 'last':
+						invertedBlock = [(blockCount-1)];
+						break;
+					case 'last-two':
+						invertedBlock = [(blockCount-2), (blockCount-1)];
+						break;
+					default:
+						invertedBlock = invertedIndex[icon];
 				}
 			}
 
@@ -179,7 +187,7 @@
 			setTimeout(function() {
 
 				// Change class			
-				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
+				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w-]+/, '');
 				i.className += 'marka-icon-'+icon+' ';
 
 				if ('sizeValue' in el) {

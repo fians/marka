@@ -3,14 +3,11 @@
 /* Circle Minus icon */
 .marka.marka-icon-circle-minus i {
     border-radius: 50%;
- 	.transform(scale(0));
-}
-
-.marka.marka-icon-circle-minus i:nth-child(1) {
     .transform(scale(0.8));
 }
 
-.marka.marka-icon-circle-minus i:nth-child(2) {
+.marka.marka-icon-circle-minus i:last-child,
+.marka.marka-icon-circle-minus i:nth-last-child(2) {
 	border-radius: 0%;
-    .transform(scale(0.5, 0.125));
+    .transform(rotate(0deg) scale(0.5, 0.125));
 }
