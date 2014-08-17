@@ -3,6 +3,16 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        // Clean all compiled files
+        clean: [
+
+            // Clean compiled css in source
+            'src/css/**/*.css',
+
+            // Clean docs static css
+            'docs/static/marka/css/**/*.css'
+        ],
+
         // Compile all LESS files individually
         less: {
             compile: {
@@ -114,6 +124,7 @@ module.exports = function(grunt) {
     });
     
     // Load module
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -123,5 +134,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     
     // Create grunt task
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('build', ['less', 'concat', 'cssmin', 'jshint', 'uglify', 'copy']);
 }

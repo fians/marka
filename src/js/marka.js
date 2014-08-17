@@ -6,6 +6,8 @@
     var blockList = {
 
     	'circle': 1,
+    	'circle-o': 2,
+
     	'square': 1,
     	'triangle': 3,
 
@@ -34,6 +36,10 @@
     	'arrow': 3,
     	'bars': 3,
     	'chevron': 2
+    };
+
+    var invertedIndex = {
+    	'circle-o': 'last'
     };
 
     function applyFunc(el, callback) {
@@ -108,17 +114,50 @@
 
 		applyFunc(this.elements, function(i) {
 
+			// Set icon name
+			i.setAttribute('data-icon', icon);
+
+			// Get data-color
+			var color = i.getAttribute('data-color');
+
+			if (!color) {
+				color = 'rgb(0, 0, 0)';
+				i.setAttribute('data-color', color);
+			}
+
 			var blockCount = i.children.length;
 
 			// Append blocks
 			if (blockList[icon] > blockCount) {
 				for (var a = 0; a < (blockList[icon] - blockCount); a++) {
+
 					var span = document.createElement('i');
-					if ('colorValue' in el) {
-						span.setAttribute('style', 'background-color:'+el.colorValue);
-					}
+
 					i.appendChild(span);
 				}
+			}
+
+			// Reset total block count
+			blockCount = i.children.length;
+
+			// Check inverted color block position
+			var invertedBlock = [];
+
+			if (invertedIndex.hasOwnProperty(icon)) {
+				if (invertedIndex[icon] === 'last') {
+					invertedBlock.push((blockCount-1));
+				} else {
+					invertedBlock.push(invertedIndex[icon]);
+				}
+			}
+
+			for (var b = 0; b < blockCount; b++) {
+
+				if (invertedBlock.indexOf(b) !== -1) {
+					color = i.getAttribute('data-bg');
+				}
+
+				i.children[b].setAttribute('style', 'background-color:'+color);
 			}
 
 			// Prevent blink transition
@@ -148,9 +187,10 @@
 
 	Marka.prototype.color = function(color) {
 
-		this.colorValue = color;
-
 		applyFunc(this.elements, function(i) {
+
+			i.setAttribute('data-color', color);
+
 			for (var a = 0; a < i.children.length; a++) {
 				i.children[a].setAttribute('style', 'background-color:'+color);
 			}
