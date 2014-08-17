@@ -9,11 +9,11 @@
 }
 .marka.marka-icon-circle-o-plus i:nth-child(2) {
   border-radius: 50%;
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  -o-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
+  transform: scale(0.65);
 }
 .marka.marka-icon-circle-o-plus i {
   border-radius: 0%;
