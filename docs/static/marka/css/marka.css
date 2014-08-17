@@ -208,6 +208,31 @@
   transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
 }
 
+/* Circle Minus icon */
+.marka.marka-icon-circle-minus i {
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.marka.marka-icon-circle-minus i:nth-child(1) {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.marka.marka-icon-circle-minus i:nth-child(2) {
+  border-radius: 0%;
+  -webkit-transform: scale(0.5, 0.125);
+  -moz-transform: scale(0.5, 0.125);
+  -ms-transform: scale(0.5, 0.125);
+  -o-transform: scale(0.5, 0.125);
+  transform: scale(0.5, 0.125);
+}
+
 /* Circle Thin O (and filled-version) icon */
 .marka.marka-icon-circle-o i,
 .marka.marka-icon-circle-o-filled i {

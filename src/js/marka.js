@@ -8,6 +8,7 @@
     	'circle': 2,
     	'circle-o': 3,
     	'circle-o-filled': 3,
+    	'circle-minus': 2,
 
     	'square': 1,
     	'triangle': 3,
@@ -42,6 +43,7 @@
     var invertedIndex = {
     	'circle-o': 1,
     	'circle-o-filled': 1,
+    	'circle-minus': 1,
     };
 
     function applyFunc(el, callback) {
