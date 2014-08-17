@@ -17,9 +17,13 @@
     	'circle': 2,
     	'circle-o': 3,
     	'circle-o-filled': 3,
+
     	'circle-minus': 3,
     	'circle-plus': 3,
     	'circle-times': 3,
+
+    	'circle-o-minus': 4,
+    	'circle-o-plus': 4,
 
     	'square': 1,
     	'triangle': 3,
@@ -52,12 +56,15 @@
     };
 
     var invertedIndex = {
+    	'circle-o': [1],
+    	'circle-o-filled': [1],
+
     	'circle-minus': 'last',
     	'circle-plus': 'last-two',
     	'circle-times': 'last-two',
-    	'circle-o': [1],
-    	'circle-o-filled': [1],
+
     	'circle-o-minus': [1],
+    	'circle-o-plus': [1],
     };
 
     function applyFunc(el, callback) {
