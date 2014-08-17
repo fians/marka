@@ -1,17 +1,25 @@
 @import "../mixin.less";
 
-/* Circle O icon & Circle O Filled icon */
+/* Circle O icon (and filled version) icon */
 .marka.marka-icon-circle-o i,
 .marka.marka-icon-circle-o-filled i {
     border-radius: 50%;
+}
+
+.marka.marka-icon-circle-o i:nth-child(1),
+.marka.marka-icon-circle-o-filled i:nth-child(1) {
     .transform(scale(0.8));
 }
 
-.marka.marka-icon-circle-o i:last-child,
+.marka.marka-icon-circle-o i:nth-child(2),
 .marka.marka-icon-circle-o-filled i:nth-child(2) {
     .transform(scale(0.6));
 }
 
-.marka.marka-icon-circle-o-filled i:last-child {
+.marka.marka-icon-circle-o i {
+ 	.transform(scale(0));
+}
+
+.marka.marka-icon-circle-o-filled i {
     .transform(scale(0.4));
 }
