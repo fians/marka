@@ -64,6 +64,10 @@
     		block: 3,
     		invert: 'last-two'
     	},
+    	'square-times': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
 
     	'triangle': {
     		block: 3
