@@ -4,14 +4,14 @@
 .marka.marka-icon-circle-times i {
     border-radius: 50%;
     .transform(scale(0.8));
-}
 
-.marka.marka-icon-circle-times i:last-child {
-	border-radius: 0%;
-    .transform(rotate(45deg) scale(0.5, 0.125));
-}
+	&:last-child {
+		border-radius: 0%;
+	    .transform(rotate(45deg) scale(0.5, 0.125));
+	}
 
-.marka.marka-icon-circle-times i:nth-last-child(2) {
-	border-radius: 0%;
-    .transform(rotate(-45deg) scale(0.5, 0.125));
+	&:nth-last-child(2) {
+		border-radius: 0%;
+	    .transform(rotate(-45deg) scale(0.5, 0.125));
+	}
 }

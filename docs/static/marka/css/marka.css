@@ -228,6 +228,14 @@
 }
 
 /* Circle O Minus icon */
+.marka.marka-icon-circle-o-minus i {
+  border-radius: 0%;
+  -webkit-transform: rotate(0deg) scale(0.5, 0.125);
+  -moz-transform: rotate(0deg) scale(0.5, 0.125);
+  -ms-transform: rotate(0deg) scale(0.5, 0.125);
+  -o-transform: rotate(0deg) scale(0.5, 0.125);
+  transform: rotate(0deg) scale(0.5, 0.125);
+}
 .marka.marka-icon-circle-o-minus i:nth-child(1) {
   border-radius: 50%;
   -webkit-transform: scale(0.8);
@@ -244,7 +252,9 @@
   -o-transform: scale(0.65);
   transform: scale(0.65);
 }
-.marka.marka-icon-circle-o-minus i {
+
+/* Circle O Plus icon */
+.marka.marka-icon-circle-o-plus i {
   border-radius: 0%;
   -webkit-transform: rotate(0deg) scale(0.5, 0.125);
   -moz-transform: rotate(0deg) scale(0.5, 0.125);
@@ -252,8 +262,6 @@
   -o-transform: rotate(0deg) scale(0.5, 0.125);
   transform: rotate(0deg) scale(0.5, 0.125);
 }
-
-/* Circle O Plus icon */
 .marka.marka-icon-circle-o-plus i:nth-child(1) {
   border-radius: 50%;
   -webkit-transform: scale(0.8);
@@ -270,14 +278,6 @@
   -o-transform: scale(0.65);
   transform: scale(0.65);
 }
-.marka.marka-icon-circle-o-plus i {
-  border-radius: 0%;
-  -webkit-transform: rotate(0deg) scale(0.5, 0.125);
-  -moz-transform: rotate(0deg) scale(0.5, 0.125);
-  -ms-transform: rotate(0deg) scale(0.5, 0.125);
-  -o-transform: rotate(0deg) scale(0.5, 0.125);
-  transform: rotate(0deg) scale(0.5, 0.125);
-}
 .marka.marka-icon-circle-o-plus i:nth-child(3) {
   border-radius: 0%;
   -webkit-transform: rotate(90deg) scale(0.5, 0.125);
@@ -288,6 +288,14 @@
 }
 
 /* Circle O Times icon */
+.marka.marka-icon-circle-o-times i {
+  border-radius: 0%;
+  -webkit-transform: rotate(45deg) scale(0.5, 0.125);
+  -moz-transform: rotate(45deg) scale(0.5, 0.125);
+  -ms-transform: rotate(45deg) scale(0.5, 0.125);
+  -o-transform: rotate(45deg) scale(0.5, 0.125);
+  transform: rotate(45deg) scale(0.5, 0.125);
+}
 .marka.marka-icon-circle-o-times i:nth-child(1) {
   border-radius: 50%;
   -webkit-transform: scale(0.8);
@@ -303,14 +311,6 @@
   -ms-transform: scale(0.65);
   -o-transform: scale(0.65);
   transform: scale(0.65);
-}
-.marka.marka-icon-circle-o-times i {
-  border-radius: 0%;
-  -webkit-transform: rotate(45deg) scale(0.5, 0.125);
-  -moz-transform: rotate(45deg) scale(0.5, 0.125);
-  -ms-transform: rotate(45deg) scale(0.5, 0.125);
-  -o-transform: rotate(45deg) scale(0.5, 0.125);
-  transform: rotate(45deg) scale(0.5, 0.125);
 }
 .marka.marka-icon-circle-o-times i:nth-child(3) {
   border-radius: 0%;
