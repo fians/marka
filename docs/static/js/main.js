@@ -34,6 +34,7 @@
     	'square-o-filled',
 
     	'square-minus',
+    	'square-plus',
 
     	'triangle',
 

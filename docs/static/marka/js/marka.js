@@ -69,6 +69,10 @@
     		block: 3,
     		invert: 'last'
     	},
+    	'square-plus': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
 
     	'triangle': {
     		block: 3
