@@ -168,11 +168,13 @@
 
 			for (var b = 0; b < blockCount; b++) {
 
+				var currentColor = color;
+
 				if (invertedBlock.indexOf(b) !== -1) {
-					color = i.getAttribute('data-bg');
+					currentColor = i.getAttribute('data-bg');
 				}
 
-				i.children[b].setAttribute('style', 'background-color:'+color);
+				i.children[b].setAttribute('style', 'background-color:'+currentColor);
 			}
 
 			// Prevent blink transition
