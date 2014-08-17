@@ -208,7 +208,7 @@
   transform: rotate(135deg) scale(0.6, 0.2) translate(16.5%, 50%);
 }
 
-/* Circle O icon (and filled version) icon */
+/* Circle Thin O (and filled-version) icon */
 .marka.marka-icon-circle-o i,
 .marka.marka-icon-circle-o-filled i {
   border-radius: 50%;
@@ -223,11 +223,11 @@
 }
 .marka.marka-icon-circle-o i:nth-child(2),
 .marka.marka-icon-circle-o-filled i:nth-child(2) {
-  -webkit-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  -o-transform: scale(0.6);
-  transform: scale(0.6);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
 }
 .marka.marka-icon-circle-o i {
   -webkit-transform: scale(0);
@@ -237,42 +237,6 @@
   transform: scale(0);
 }
 .marka.marka-icon-circle-o-filled i {
-  -webkit-transform: scale(0.4);
-  -moz-transform: scale(0.4);
-  -ms-transform: scale(0.4);
-  -o-transform: scale(0.4);
-  transform: scale(0.4);
-}
-
-/* Circle Thin O (and filled-version) icon */
-.marka.marka-icon-circle-thin-o i,
-.marka.marka-icon-circle-thin-o-filled i {
-  border-radius: 50%;
-}
-.marka.marka-icon-circle-thin-o i:nth-child(1),
-.marka.marka-icon-circle-thin-o-filled i:nth-child(1) {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
-}
-.marka.marka-icon-circle-thin-o i:nth-child(2),
-.marka.marka-icon-circle-thin-o-filled i:nth-child(2) {
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  -o-transform: scale(0.7);
-  transform: scale(0.7);
-}
-.marka.marka-icon-circle-thin-o i {
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-}
-.marka.marka-icon-circle-thin-o-filled i {
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
   -ms-transform: scale(0.6);

@@ -1,4 +1,4 @@
-/* Circle O icon (and filled version) icon */
+/* Circle Thin O (and filled-version) icon */
 .marka.marka-icon-circle-o i,
 .marka.marka-icon-circle-o-filled i {
   border-radius: 50%;
@@ -13,11 +13,11 @@
 }
 .marka.marka-icon-circle-o i:nth-child(2),
 .marka.marka-icon-circle-o-filled i:nth-child(2) {
-  -webkit-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  -o-transform: scale(0.6);
-  transform: scale(0.6);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
 }
 .marka.marka-icon-circle-o i {
   -webkit-transform: scale(0);
@@ -27,9 +27,9 @@
   transform: scale(0);
 }
 .marka.marka-icon-circle-o-filled i {
-  -webkit-transform: scale(0.4);
-  -moz-transform: scale(0.4);
-  -ms-transform: scale(0.4);
-  -o-transform: scale(0.4);
-  transform: scale(0.4);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
 }
