@@ -55,6 +55,12 @@
     		block: 3,
     		invert: [1]
     	},
+
+    	'square-minus': {
+    		block: 3,
+    		invert: 'last'
+    	},
+
     	'triangle': {
     		block: 3
     	},

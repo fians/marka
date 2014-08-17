@@ -32,7 +32,9 @@
     	'square',
     	'square-o',
     	'square-o-filled',
-    	
+
+    	'square-minus',
+
     	'triangle',
 
     	// Math
