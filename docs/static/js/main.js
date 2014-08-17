@@ -30,6 +30,9 @@
 		'circle-o-times',
 
     	'square',
+    	'square-o',
+    	'square-o-filled',
+    	
     	'triangle',
 
     	// Math

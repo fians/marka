@@ -5,6 +5,7 @@
     // Blocks needed to create the icon
     var blockList = {
 
+    	/* Circle Icons */
     	'circle': {
     		block: 2
     	},
@@ -44,7 +45,15 @@
     	},
 
     	'square': {
-    		block: 1
+    		block: 2
+    	},
+    	'square-o': {
+    		block: 3,
+    		invert: [1]
+    	},
+    	'square-o-filled': {
+    		block: 3,
+    		invert: [1]
     	},
     	'triangle': {
     		block: 3

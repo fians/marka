@@ -114,7 +114,7 @@ module.exports = function(grunt) {
                     spawn: false,
                     event: ['added', 'deleted', 'changed']
                 },
-                files: ['src/**/*'],
+                files: ['src/**/*.js', 'src/**/*.less'],
                 tasks: ['less', 'concat', 'cssmin', 'jshint', 'uglify', 'copy']
             },
             grunt: {
