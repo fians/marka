@@ -18,6 +18,8 @@
 
 		// Shape
 		'circle',
+		'circle-o',
+		
     	'square',
     	'triangle',
 

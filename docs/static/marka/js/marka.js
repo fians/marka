@@ -14,7 +14,7 @@
     // Blocks needed to create the icon
     var blockList = {
 
-    	'circle': 1,
+    	'circle': 2,
     	'circle-o': 2,
 
     	'square': 1,
