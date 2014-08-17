@@ -1,0 +1,33 @@
+/* Square O Plus icon */
+.marka.marka-icon-square-o-plus i {
+  border-radius: 0%;
+  -webkit-transform: rotate(0deg) scale(0.5, 0.125);
+  -moz-transform: rotate(0deg) scale(0.5, 0.125);
+  -ms-transform: rotate(0deg) scale(0.5, 0.125);
+  -o-transform: rotate(0deg) scale(0.5, 0.125);
+  transform: rotate(0deg) scale(0.5, 0.125);
+}
+.marka.marka-icon-square-o-plus i:nth-child(1) {
+  border-radius: 10%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.marka.marka-icon-square-o-plus i:nth-child(2) {
+  border-radius: 10%;
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
+  transform: scale(0.65);
+}
+.marka.marka-icon-square-o-plus i:nth-child(3) {
+  border-radius: 0%;
+  -webkit-transform: rotate(90deg) scale(0.5, 0.125);
+  -moz-transform: rotate(90deg) scale(0.5, 0.125);
+  -ms-transform: rotate(90deg) scale(0.5, 0.125);
+  -o-transform: rotate(90deg) scale(0.5, 0.125);
+  transform: rotate(90deg) scale(0.5, 0.125);
+}

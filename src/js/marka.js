@@ -77,6 +77,10 @@
     		block: 4,
     		invert: [1]
     	},
+    	'square-o-plus': {
+    		block: 4,
+    		invert: [1]
+    	},
 
     	'triangle': {
     		block: 3

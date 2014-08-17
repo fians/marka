@@ -39,6 +39,7 @@
     	'square-check',
 
     	'square-o-minus',
+    	'square-o-plus',
 
     	'triangle',
 
