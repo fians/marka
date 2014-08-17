@@ -27,6 +27,7 @@
 
 		'circle-o-minus',
 		'circle-o-plus',
+		'circle-o-times',
 
     	'square',
     	'triangle',

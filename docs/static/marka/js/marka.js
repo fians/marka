@@ -24,6 +24,7 @@
 
     	'circle-o-minus': 4,
     	'circle-o-plus': 4,
+    	'circle-o-times': 4,
 
     	'square': 1,
     	'triangle': 3,
@@ -65,6 +66,7 @@
 
     	'circle-o-minus': [1],
     	'circle-o-plus': [1],
+    	'circle-o-times': [1],
     };
 
     function applyFunc(el, callback) {
