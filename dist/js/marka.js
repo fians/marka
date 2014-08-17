@@ -16,6 +16,7 @@
 
     	'circle': 2,
     	'circle-o': 2,
+    	'circle-o-thin': 2,
 
     	'square': 1,
     	'triangle': 3,
@@ -48,7 +49,8 @@
     };
 
     var invertedIndex = {
-    	'circle-o': 'last'
+    	'circle-o': 'last',
+    	'circle-o-thin': 'last'
     };
 
     function applyFunc(el, callback) {
