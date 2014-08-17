@@ -68,6 +68,10 @@
     		block: 3,
     		invert: 'last-two'
     	},
+    	'square-check': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
 
     	'triangle': {
     		block: 3

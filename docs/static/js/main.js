@@ -36,6 +36,7 @@
     	'square-minus',
     	'square-plus',
     	'square-times',
+    	'square-check',
 
     	'triangle',
 
