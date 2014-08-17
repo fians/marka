@@ -22,6 +22,13 @@
     	'triangle',
     	'triangle-round',
 
+    	// Sign & Form
+    	'minus',
+    	'plus',
+    	'times',
+    	'asterisk',
+    	'check',
+
 		'circle-minus',
 		'circle-plus',
 		'circle-times',
@@ -34,28 +41,19 @@
 
     	'square-minus',
     	'square-plus',
-    	'square-times',
     	'square-check',
+    	'square-times',
 
     	'square-o',
     	'square-o-filled',
     	'square-o-minus',
     	'square-o-plus',
-    	'square-o-times',
     	'square-o-check',
-
-    	// Math
-    	'minus',
-    	'plus',
-    	'times',
-    	'asterisk',
-
-    	// Form & List
-    	'check',
-    	'sort',
-    	'sort-half',
+    	'square-o-times',
 
     	// App
+    	'sort',
+    	'sort-half',
     	'signal-three-one',
     	'signal-three-two',
     	'signal-three',
