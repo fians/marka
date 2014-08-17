@@ -632,19 +632,19 @@
 }
 .marka.marka-icon-square-check i:last-child {
   border-radius: 0%;
-  -webkit-transform: rotate(-45deg) scale(0.5, 0.125) translate(13%, 35%);
-  -moz-transform: rotate(-45deg) scale(0.5, 0.125) translate(13%, 35%);
-  -ms-transform: rotate(-45deg) scale(0.5, 0.125) translate(13%, 35%);
-  -o-transform: rotate(-45deg) scale(0.5, 0.125) translate(13%, 35%);
-  transform: rotate(-45deg) scale(0.5, 0.125) translate(13%, 35%);
+  -webkit-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -moz-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -ms-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -o-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
 }
 .marka.marka-icon-square-check i:nth-last-child(2) {
   border-radius: 0%;
-  -webkit-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 100%);
-  -moz-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 100%);
-  -ms-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 100%);
-  -o-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 100%);
-  transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 100%);
+  -webkit-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -moz-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -ms-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -o-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
 }
 
 /* Square Minus icon */
@@ -664,6 +664,40 @@
   -ms-transform: rotate(0deg) scale(0.5, 0.125);
   -o-transform: rotate(0deg) scale(0.5, 0.125);
   transform: rotate(0deg) scale(0.5, 0.125);
+}
+
+/* Square-O check icon */
+.marka.marka-icon-square-o-check i {
+  border-radius: 0%;
+  -webkit-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -moz-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -ms-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -o-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+}
+.marka.marka-icon-square-o-check i:nth-child(1) {
+  border-radius: 10%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.marka.marka-icon-square-o-check i:nth-child(2) {
+  border-radius: 10%;
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -ms-transform: scale(0.65);
+  -o-transform: scale(0.65);
+  transform: scale(0.65);
+}
+.marka.marka-icon-square-o-check i:nth-child(3) {
+  border-radius: 0%;
+  -webkit-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -moz-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -ms-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -o-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
 }
 
 /* Square-O (filled-version) icon */

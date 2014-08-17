@@ -94,6 +94,10 @@
     		block: 4,
     		invert: [1]
     	},
+    	'square-o-check': {
+    		block: 4,
+    		invert: [1]
+    	},
 
     	'triangle': {
     		block: 3

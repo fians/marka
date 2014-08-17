@@ -41,6 +41,7 @@
     	'square-o-minus',
     	'square-o-plus',
     	'square-o-times',
+    	'square-o-check',
 
     	'triangle',
 
