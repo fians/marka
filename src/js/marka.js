@@ -93,6 +93,9 @@
     	'triangle': {
     		block: 3
     	},
+    	'triangle-round': {
+    		block: 3
+    	},
 
     	'asterisk': {
     		block: 3

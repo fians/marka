@@ -18,32 +18,31 @@
 
 		// Shape
 		'circle',
-		'circle-o',
-		'circle-o-filled',
+    	'square',
+    	'triangle',
+    	'triangle-round',
 
 		'circle-minus',
 		'circle-plus',
 		'circle-times',
 
+		'circle-o',
+		'circle-o-filled',
 		'circle-o-minus',
 		'circle-o-plus',
 		'circle-o-times',
-
-    	'square',
-    	'square-o',
-    	'square-o-filled',
 
     	'square-minus',
     	'square-plus',
     	'square-times',
     	'square-check',
 
+    	'square-o',
+    	'square-o-filled',
     	'square-o-minus',
     	'square-o-plus',
     	'square-o-times',
     	'square-o-check',
-
-    	'triangle',
 
     	// Math
     	'minus',
@@ -95,9 +94,9 @@
 
 		// Set navigation icon
 		var prev = new Marka('#prevIcon');
-		prev.set('triangle').rotate('left');
+		prev.set('triangle-round').rotate('left');
 		var next = new Marka('#nextIcon');
-		next.set('triangle').rotate('right');
+		next.set('triangle-round').rotate('right');
 	}
 
 	function generateCode() {

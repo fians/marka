@@ -1,6 +1,6 @@
 /* Triangle icon */
 .marka.marka-icon-triangle i {
-  border-radius: 0% 30% 0 30%;
+  border-radius: 0% 0% 0 30%;
   -webkit-transform: rotate(-60deg) skewX(-30deg) scale(0.5, 0.433) translate(2%, -5%);
   -moz-transform: rotate(-60deg) skewX(-30deg) scale(0.5, 0.433) translate(2%, -5%);
   -ms-transform: rotate(-60deg) skewX(-30deg) scale(0.5, 0.433) translate(2%, -5%);
@@ -8,11 +8,11 @@
   transform: rotate(-60deg) skewX(-30deg) scale(0.5, 0.433) translate(2%, -5%);
 }
 .marka.marka-icon-triangle i:nth-child(2) {
-  -webkit-transform: rotate(0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
-  -moz-transform: rotate(0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
-  -ms-transform: rotate(0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
-  -o-transform: rotate(0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
-  transform: rotate(0deg) skewX(-30deg) scale(0.5) translate(-5%, 30%);
+  -webkit-transform: rotate(180deg) skewX(-30deg) scale(0.5) translate(5%, -30%);
+  -moz-transform: rotate(180deg) skewX(-30deg) scale(0.5) translate(5%, -30%);
+  -ms-transform: rotate(180deg) skewX(-30deg) scale(0.5) translate(5%, -30%);
+  -o-transform: rotate(180deg) skewX(-30deg) scale(0.5) translate(5%, -30%);
+  transform: rotate(180deg) skewX(-30deg) scale(0.5) translate(5%, -30%);
 }
 .marka.marka-icon-triangle i:nth-child(3) {
   -webkit-transform: rotate(90deg) skewY(-30deg) scale(0.5) translate(30%, -2%);
