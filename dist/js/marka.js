@@ -19,6 +19,7 @@
     	'circle-o-filled': 3,
     	'circle-minus': 3,
     	'circle-plus': 3,
+    	'circle-times': 3,
 
     	'square': 1,
     	'triangle': 3,
@@ -55,6 +56,7 @@
     	'circle-o-filled': [1],
     	'circle-minus': 'last',
     	'circle-plus': 'last-two',
+    	'circle-times': 'last-two',
     };
 
     function applyFunc(el, callback) {
