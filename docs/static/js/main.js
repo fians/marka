@@ -38,6 +38,8 @@
     	'square-times',
     	'square-check',
 
+    	'square-o-minus',
+
     	'triangle',
 
     	// Math

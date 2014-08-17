@@ -73,6 +73,11 @@
     		invert: 'last-two'
     	},
 
+    	'square-o-minus': {
+    		block: 4,
+    		invert: [1]
+    	},
+
     	'triangle': {
     		block: 3
     	},
