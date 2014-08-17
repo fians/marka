@@ -1,11 +1,17 @@
 @import "../mixin.less";
 
-/* Circle icon */
-.marka.marka-icon-circle-o i {
+/* Circle O icon & Circle O Filled icon */
+.marka.marka-icon-circle-o i,
+.marka.marka-icon-circle-o-filled i {
     border-radius: 50%;
     .transform(scale(0.8));
 }
 
-.marka.marka-icon-circle-o i:last-child {
+.marka.marka-icon-circle-o i:last-child,
+.marka.marka-icon-circle-o-filled i:nth-child(2) {
     .transform(scale(0.6));
+}
+
+.marka.marka-icon-circle-o-filled i:last-child {
+    .transform(scale(0.4));
 }

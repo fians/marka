@@ -1,5 +1,6 @@
-/* Circle icon */
-.marka.marka-icon-circle-o i {
+/* Circle O icon & Circle O Filled icon */
+.marka.marka-icon-circle-o i,
+.marka.marka-icon-circle-o-filled i {
   border-radius: 50%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -7,10 +8,18 @@
   -o-transform: scale(0.8);
   transform: scale(0.8);
 }
-.marka.marka-icon-circle-o i:last-child {
+.marka.marka-icon-circle-o i:last-child,
+.marka.marka-icon-circle-o-filled i:nth-child(2) {
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
   -ms-transform: scale(0.6);
   -o-transform: scale(0.6);
   transform: scale(0.6);
+}
+.marka.marka-icon-circle-o-filled i:last-child {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
 }

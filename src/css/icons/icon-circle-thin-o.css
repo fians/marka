@@ -1,5 +1,5 @@
 /* Circle icon */
-.marka.marka-icon-circle-o-thin i {
+.marka.marka-icon-circle-thin-o i {
   border-radius: 50%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -7,7 +7,7 @@
   -o-transform: scale(0.8);
   transform: scale(0.8);
 }
-.marka.marka-icon-circle-o-thin i:last-child {
+.marka.marka-icon-circle-thin-o i:last-child {
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
   -ms-transform: scale(0.7);

@@ -19,7 +19,9 @@
 		// Shape
 		'circle',
 		'circle-o',
-		'circle-o-thin',
+		'circle-o-filled',
+		'circle-thin-o',
+		'circle-thin-o-filled',
 
     	'square',
     	'triangle',
