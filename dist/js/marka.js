@@ -14,59 +14,118 @@
     // Blocks needed to create the icon
     var blockList = {
 
-    	'circle': 2,
-    	'circle-o': 3,
-    	'circle-o-filled': 3,
+    	'circle': {
+    		block: 2
+    	},
+    	'circle-o': {
+    		block: 3,
+    		invert: [1]
+    	},
+    	'circle-o-filled': {
+    		block: 3,
+    		invert: [1]
+    	},
 
-    	'circle-minus': 3,
-    	'circle-plus': 3,
-    	'circle-times': 3,
+    	'circle-minus': {
+    		block: 3,
+    		invert: 'last'
+    	},
+    	'circle-plus': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
+    	'circle-times': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
 
-    	'circle-o-minus': 4,
-    	'circle-o-plus': 4,
-    	'circle-o-times': 4,
+    	'circle-o-minus': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'circle-o-plus': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'circle-o-times': {
+    		block: 4,
+    		invert: [1]
+    	},
 
-    	'square': 1,
-    	'triangle': 3,
+    	'square': {
+    		block: 1
+    	},
+    	'triangle': {
+    		block: 3
+    	},
 
-    	'asterisk': 3,
-    	'minus': 1,
-    	'plus': 2,
-    	'times': 2,
+    	'asterisk': {
+    		block: 3
+    	},
+    	'minus': {
+    		block: 1
+    	},
+    	'plus': {
+    		block: 2
+    	},
+    	'times': {
+    		block: 2
+    	},
 
-    	'check': 2,
-    	'sort': 6,
-    	'sort-half': 3,
+    	'check': {
+    		block: 2
+    	},
+    	'sort': {
+    		block: 6
+    	},
+    	'sort-half': {
+    		block: 3
+    	},
 
-    	'signal-three-one': 3,
-    	'signal-three-two': 3,
-    	'signal-three': 3,
-    	'signal-five-one': 5,
-    	'signal-five-two': 5,
-    	'signal-five-three': 5,
-    	'signal-five-four': 5,
-    	'signal-five': 5,
+    	'signal-three-one': {
+    		block: 3
+    	},
+    	'signal-three-two': {
+    		block: 3
+    	},
+    	'signal-three': {
+    		block: 3
+    	},
+    	'signal-five-one': {
+    		block: 5
+    	},
+    	'signal-five-two': {
+    		block: 5
+    	},
+    	'signal-five-three': {
+    		block: 5
+    	},
+    	'signal-five-four': {
+    		block: 5
+    	},
+    	'signal-five': {
+    		block: 5
+    	},
 
-    	'pause': 2,
+    	'pause': {
+    		block: 2
+    	},
 
-    	'angle': 2,
-    	'angle-double': 4,
-    	'arrow': 3,
-    	'bars': 3,
-    	'chevron': 2
-    };
-
-    var invertedIndex = {
-    	'circle-o': [1],
-    	'circle-o-filled': [1],
-
-    	'circle-minus': 'last',
-    	'circle-plus': 'last-two',
-    	'circle-times': 'last-two',
-
-    	'circle-o-minus': [1],
-    	'circle-o-plus': [1],
-    	'circle-o-times': [1],
+    	'angle': {
+    		block: 2
+    	},
+    	'angle-double': {
+    		block: 4
+    	},
+    	'arrow': {
+    		block: 3
+    	},
+    	'bars': {
+    		block: 3
+    	},
+    	'chevron': {
+    		block: 2
+    	},
     };
 
     function applyFunc(el, callback) {
@@ -155,8 +214,8 @@
 			var blockCount = i.children.length;
 
 			// Append blocks
-			if (blockList[icon] > blockCount) {
-				for (var a = 0; a < (blockList[icon] - blockCount); a++) {
+			if (blockList[icon].block > blockCount) {
+				for (var a = 0; a < (blockList[icon].block - blockCount); a++) {
 
 					var span = document.createElement('i');
 
@@ -170,9 +229,9 @@
 			// Check inverted color block position
 			var invertedBlock = [];
 
-			if (invertedIndex.hasOwnProperty(icon)) {
+			if (blockList[icon].hasOwnProperty('invert')) {
 
-				switch (invertedIndex[icon]) {
+				switch (blockList[icon].invert) {
 					case 'last':
 						invertedBlock = [(blockCount-1)];
 						break;
@@ -180,7 +239,7 @@
 						invertedBlock = [(blockCount-2), (blockCount-1)];
 						break;
 					default:
-						invertedBlock = invertedIndex[icon];
+						invertedBlock = blockList[icon].invert;
 				}
 			}
 
