@@ -40,6 +40,7 @@
 
     	'square-o-minus',
     	'square-o-plus',
+    	'square-o-times',
 
     	'triangle',
 
