@@ -52,11 +52,12 @@
     };
 
     var invertedIndex = {
-    	'circle-o': [1],
-    	'circle-o-filled': [1],
     	'circle-minus': 'last',
     	'circle-plus': 'last-two',
     	'circle-times': 'last-two',
+    	'circle-o': [1],
+    	'circle-o-filled': [1],
+    	'circle-o-minus': [1],
     };
 
     function applyFunc(el, callback) {

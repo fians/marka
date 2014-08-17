@@ -20,9 +20,12 @@
 		'circle',
 		'circle-o',
 		'circle-o-filled',
+		
 		'circle-minus',
 		'circle-plus',
 		'circle-times',
+
+		'circle-o-minus',
 
     	'square',
     	'triangle',
