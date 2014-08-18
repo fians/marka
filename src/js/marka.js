@@ -174,6 +174,65 @@
 		);
 	}
 
+    function changeColor(el, color) {
+
+        // Set color
+        el.setAttribute('data-color', color);
+
+        // Total block count
+        var icon = el.getAttribute('data-icon');
+        var blockCount = el.children.length;
+
+        // Check inverted color block position
+        var invertedBlock = [];
+
+        if (blockList[icon].hasOwnProperty('invert')) {
+
+            switch (blockList[icon].invert) {
+                case 'last':
+                    invertedBlock = [(blockCount-1)];
+                    break;
+                case 'last-two':
+                    invertedBlock = [(blockCount-2), (blockCount-1)];
+                    break;
+                default:
+                    invertedBlock = blockList[icon].invert;
+            }
+        }
+
+        for (var b = 0; b < blockCount; b++) {
+
+            var currentColor = color;
+
+            if (invertedBlock.indexOf(b) !== -1) {
+                currentColor = el.getAttribute('data-bg');
+            }
+
+            el.children[b].setAttribute('style', 'background-color:'+currentColor);
+        }
+    }
+
+    function setBackground(el) {
+
+        var parent = el.parentNode, 
+            backgroundColor = 'rgba(0, 0, 0, 0)';
+
+        do {
+            backgroundColor = window.getComputedStyle(parent)['background-color'];
+            parent = parent.parentNode;
+            if (backgroundColor !== 'rgba(0, 0, 0, 0)') {
+                break;
+            }
+
+        } while ('tagName' in parent);
+
+        if (backgroundColor === 'rgba(0, 0, 0, 0)') {
+            backgroundColor = 'rgb(255, 255, 255)';
+        }
+
+        el.setAttribute('data-bg', backgroundColor);
+    }
+
 	function Marka(el) {
 		
 		this.elements = [];
@@ -202,23 +261,7 @@
 		applyFunc(this.elements, function(i) {
 
 			// Set background color
-			var parent = i.parentNode, 
-				backgroundColor = 'rgba(0, 0, 0, 0)';
-
-			do {
-				backgroundColor = window.getComputedStyle(parent)['background-color'];
-				parent = parent.parentNode;
-				if (backgroundColor !== 'rgba(0, 0, 0, 0)') {
-					break;
-				}
-
-			} while ('tagName' in parent);
-
-			if (backgroundColor === 'rgba(0, 0, 0, 0)') {
-				backgroundColor = 'rgb(255, 255, 255)';
-			}
-
-			i.setAttribute('data-bg', backgroundColor);
+            setBackground(i);
 
 			if (i.className.indexOf('marka') === -1) {
 				i.className += ' marka ';
@@ -258,36 +301,9 @@
 				}
 			}
 
-			// Reset total block count
-			blockCount = i.children.length;
-
-			// Check inverted color block position
-			var invertedBlock = [];
-
-			if (blockList[icon].hasOwnProperty('invert')) {
-
-				switch (blockList[icon].invert) {
-					case 'last':
-						invertedBlock = [(blockCount-1)];
-						break;
-					case 'last-two':
-						invertedBlock = [(blockCount-2), (blockCount-1)];
-						break;
-					default:
-						invertedBlock = blockList[icon].invert;
-				}
-			}
-
-			for (var b = 0; b < blockCount; b++) {
-
-				var currentColor = color;
-
-				if (invertedBlock.indexOf(b) !== -1) {
-					currentColor = i.getAttribute('data-bg');
-				}
-
-				i.children[b].setAttribute('style', 'background-color:'+currentColor);
-			}
+            // Change color
+            setBackground(i);
+            changeColor(i, color);
 
 			// Prevent blink transition
 			setTimeout(function() {
@@ -317,12 +333,8 @@
 	Marka.prototype.color = function(color) {
 
 		applyFunc(this.elements, function(i) {
-
-			i.setAttribute('data-color', color);
-
-			for (var a = 0; a < i.children.length; a++) {
-				i.children[a].setAttribute('style', 'background-color:'+color);
-			}
+            setBackground(i);
+            changeColor(i, color);
 		});	
 
 		return this;
