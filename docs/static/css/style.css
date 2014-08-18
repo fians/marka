@@ -331,6 +331,55 @@ a.button[disabled]:hover {
     z-index:1;
 }
 
+#compilePopup {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#compilePopup .wrapper {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.5;
+}
+
+#compilePopup .box {
+  position:absolute;  
+  top:50%;
+  left:50%;
+  margin-top:-200px;
+  margin-left:-250px;
+  width:500px;
+  height:400px;
+  background:#fff;
+}
+
+#compilePopup h2 {
+  padding-left:20px;
+}
+
+#compilePopup .option {
+  position:absolute;
+  top:15px;
+  right:15px;
+}
+
+#compilePopup .button {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+#compilePopup .button.selected {
+  color:#fff;
+  background: #ff6600;
+}
+
 .page .content .footer {
     padding:40px 20px 20px;
 }

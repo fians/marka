@@ -33,6 +33,7 @@
 
 		var el = $(this);
 		var type = el.data('type');
+		var m = new Marka($(this).find('i')[0]);
 
 		// Remove selected
 		if (el.hasClass('selected')) {
@@ -43,13 +44,17 @@
 			}
 			
 			updateIconCount();
-			return el.removeClass('selected');
+			el.removeClass('selected');
+			return m.color('#000');
+
 		}
 
 		// Add selected
 		choosenIcons.push(type);
 		updateIconCount();
-		return el.addClass('selected');
+		el.addClass('selected');
+		return m.color('#fff');
+		
 	}
 
 	function getHeader() {

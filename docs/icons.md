@@ -6,7 +6,7 @@ title: Icons - Marka
 Icons
 =====
 
-Marka currently have 20 icons ready to use and
+Marka currently have 38 icons ready to use and
 you can [customize marka.css](./customize.html) 
 to pick icons based on your needs.
 If you have idea for next icon that should
@@ -31,35 +31,120 @@ Shape
 </div>
 <div class="clear"></div>
 
-Math
-----
+Sign & Form
+-----------
 <div class="iconList">
-	<div class="item">
-		<i class="icons" data-type="plus" data-rotate="up"></i>
-		<code>plus</code>
-	</div>
 	<div class="item">
 		<i class="icons" data-type="minus" data-rotate="up"></i>
 		<code>minus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="plus" data-rotate="up"></i>
+		<code>plus</code>
 	</div>
 	<div class="item">
 		<i class="icons" data-type="times" data-rotate="up"></i>
 		<code>times</code>
 	</div>
 	<div class="item">
-		<i class="icons" data-type="asterisk" data-rotate="up"></i>
-		<code>asterisk</code>
-	</div>
-</div>
-<div class="clear"></div>
-
-Form & List
------------
-<div class="iconList">
-	<div class="item">
 		<i class="icons" data-type="check" data-rotate="up"></i>
 		<code>check</code>
 	</div>
+	<div class="item">
+		<i class="icons" data-type="asterisk" data-rotate="up"></i>
+		<code>asterisk</code>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="item">
+		<i class="icons" data-type="circle-minus" data-rotate="up"></i>
+		<code>circle-minus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="circle-plus" data-rotate="up"></i>
+		<code>circle-plus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="circle-times" data-rotate="up"></i>
+		<code>circle-times</code>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="item">
+		<i class="icons" data-type="circle-o" data-rotate="up"></i>
+		<code>circle-o</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="circle-o-filled" data-rotate="up"></i>
+		<code>circle-o-filled</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="circle-o-times" data-rotate="up"></i>
+		<code>circle-o-times</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="circle-o-minus" data-rotate="up"></i>
+		<code>circle-o-minus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="circle-o-plus" data-rotate="up"></i>
+		<code>circle-o-plus</code>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="item">
+		<i class="icons" data-type="square-minus" data-rotate="up"></i>
+		<code>square-minus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-plus" data-rotate="up"></i>
+		<code>square-plus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-times" data-rotate="up"></i>
+		<code>square-times</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-check" data-rotate="up"></i>
+		<code>square-check</code>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="item">
+		<i class="icons" data-type="square-o" data-rotate="up"></i>
+		<code>square-o</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-o-filled" data-rotate="up"></i>
+		<code>square-o-filled</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-o-minus" data-rotate="up"></i>
+		<code>square-o-minus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-o-plus" data-rotate="up"></i>
+		<code>square-o-plus</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-o-times" data-rotate="up"></i>
+		<code>square-o-times</code>
+	</div>
+	<div class="item">
+		<i class="icons" data-type="square-o-check" data-rotate="up"></i>
+		<code>square-o-check</code>
+	</div>
+	
+</div>
+<div class="clear"></div>
+
+Application
+-----------
+<div class="iconList">
 	<div class="item">
 		<i class="icons" data-type="sort" data-rotate="up"></i>
 		<code>sort</code>
@@ -68,12 +153,6 @@ Form & List
 		<i class="icons" data-type="sort-half" data-rotate="up"></i>
 		<code>sort-half</code>
 	</div>
-</div>
-<div class="clear"></div>
-
-Application
------------
-<div class="iconList">
 	<div class="item">
 		<i class="icons" data-type="signal-three" data-rotate="up"></i>
 		<code>signal-three</code>
@@ -91,14 +170,6 @@ Audio
 	<div class="item">
 		<i class="icons" data-type="pause" data-rotate="up"></i>
 		<code>pause</code>
-	</div>
-	<div class="item">
-		<i class="icons" data-type="forward" data-rotate="up"></i>
-		<code>forward</code>
-	</div>
-	<div class="item">
-		<i class="icons" data-type="backward" data-rotate="up"></i>
-		<code>backward</code>
 	</div>
 </div>
 <div class="clear"></div>

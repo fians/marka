@@ -113,31 +113,8 @@ Color it
 ---------
 
 By default, Marka set black `#000000` as default color
-of any icon. There is two ways to overide the default color
-of your icon, using CSS directly or Marka API, `color()`.
-
-When you set icon on Marka instance, Marka will append 
-some `<i>` inside your icon. So if you want to color 
-your icon directly with CSS, you need to set `background-color`
-or `background` of `<i>` element inside your icon.
-
-Example:
-
-~~~css
-#icon i {
-    background: #ffffff;
-}
-
-/* Or */
-#icon i {
-    background-color: #ffffff;
-}
-~~~
-
-If you dont want to get your hand dirty to write some 
-CSS for each icon. Marka provides you simple `color()`
-function which can be chained alongside other function on 
-Marka instance.
+of any icon. You can overide the default color
+of your icon, using `color()`.
 
 Example:
 
@@ -155,34 +132,8 @@ Change size
 -----------
 
 Because created with HTML element, every Marka icon
-is scalable, so you can change to every size you want.
-Just like when you want to change the color, you 
-can change icon size directly with CSS or using `size()`
-function.
-
-You have to make sure `width` and `height` at
-same value when you want to change size the icon with 
-CSS. Because when `width` and `height` value is not same,
-your icon probably will be broken.
-
-Example:
-
-~~~css
-/* Wrong! */
-#icon {
-    width:20px;
-    height:25px;
-}
-
-/* Correct! */
-#icon {
-    width: 20px;
-    height: 20px;
-}
-~~~
-
-With `size()`, you can change size of your icon without
-talk directly with CSS.
+is scalable. You can change to every size you want 
+using `size()` function.
 
 ~~~javascript
 var m = new Marka('#icon');
