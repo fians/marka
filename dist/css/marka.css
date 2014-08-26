@@ -100,6 +100,29 @@
   transform: rotate(135deg) scale(0.4, 0.1) translate(20%, 75%);
 }
 
+/* Arrow down icon */
+.marka.marka-icon-arrow-down i {
+  -webkit-transform: rotate(135deg) scale(0.55, 0.2) translate(25.5%, -160%);
+  -moz-transform: rotate(135deg) scale(0.55, 0.2) translate(25.5%, -160%);
+  -ms-transform: rotate(135deg) scale(0.55, 0.2) translate(25.5%, -160%);
+  -o-transform: rotate(135deg) scale(0.55, 0.2) translate(25.5%, -160%);
+  transform: rotate(135deg) scale(0.55, 0.2) translate(25.5%, -160%);
+}
+.marka.marka-icon-arrow-down i:nth-child(2) {
+  -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(25.5%, 160%);
+  -moz-transform: rotate(45deg) scale(0.55, 0.2) translate(25.5%, 160%);
+  -ms-transform: rotate(45deg) scale(0.55, 0.2) translate(25.5%, 160%);
+  -o-transform: rotate(45deg) scale(0.55, 0.2) translate(25.5%, 160%);
+  transform: rotate(45deg) scale(0.55, 0.2) translate(25.5%, 160%);
+}
+.marka.marka-icon-arrow-down i:nth-child(3) {
+  -webkit-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
+  -moz-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
+  -ms-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
+  -o-transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
+  transform: rotate(90deg) scale(0.6, 0.2) translate(17%, 0%);
+}
+
 /* Arrow icon */
 .marka.marka-icon-arrow i {
   -webkit-transform: rotate(45deg) scale(0.55, 0.2) translate(-0.5%, -90%);
