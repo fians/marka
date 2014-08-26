@@ -34,6 +34,7 @@
     	'angle': 2,
     	'angle-double': 4,
     	'arrow': 3,
+    	'arrow-down': 3,
     	'bars': 3,
     	'chevron': 2
     };
