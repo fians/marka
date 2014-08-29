@@ -1,7 +1,8 @@
----
-layout: page
-title: Frequently Asked Question - Marka
----
+
+@situs-include(./layouts/page-header.html)
+@situs-data({
+    "title": "Frequently Asked Question - Marka"
+})
 
 FAQ
 ===
@@ -16,3 +17,5 @@ FAQ
 
 2. **I found a bug, where should I reported to?**
 	- Oh, great! Just report the issue in [Marka's Github repo](https://github.com/fians/marka/issues).
+    
+@situs-include(./layouts/page-footer.html)

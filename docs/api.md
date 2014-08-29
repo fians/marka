@@ -1,7 +1,8 @@
----
-layout: page
-title: API - Marka
----
+
+@situs-include(./layouts/page-header.html)
+@situs-data({
+    "title": "API - Marka"
+})
 
 API
 ===
@@ -43,3 +44,5 @@ Change icon direction of Marka element.
 _Arguments:_
 
 - `direction` _(string)_: Direction of icon. It can be "up", "down", "left", or "right".
+
+@situs-include(./layouts/page-footer.html)

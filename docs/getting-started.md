@@ -1,7 +1,8 @@
----
-layout: page
-title: Getting Started - Marka
----
+
+@situs-include(./layouts/page-header.html)
+@situs-data({
+    "title": "Getting Started - Marka"
+})
 
 Getting Started
 ===============
@@ -168,3 +169,5 @@ m.rotate('right');
 // or up again
 m.rotate('up');
 ~~~
+
+@situs-include(./layouts/page-footer.html)
