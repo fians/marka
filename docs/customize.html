@@ -7,15 +7,13 @@
 		<div id="custom" class="page">
 			<div id="generate" class="hide">Generating your file...</div>
 			<div class="nav">
-				<h1><a href="./">Marka</a></h1>
+				<h1><a href="./getting-started.html">Marka</a></h1>
 				<p>Beautiful transformable icons <br> built for the web.</p>
 				<p>(v0.3.0)</p>
 
 				<div class="compile">
 					<h4><span id="iconsCount">No icon</span> selected</h4>
-					<h4>Download:</h4>
-					<a class="button generateCSS" data-type="normal">CSS</a> 
-					<a class="button generateCSS" data-type="min">CSS (minified)</a>
+					<h4><a id="download" class="button">Download</a></h4>
 				</div>
 			</div>
 			<div class="content">
@@ -218,11 +216,15 @@
 						<div class="header">
 							<h2>CSS</h2>
 							<div class="option">
-								<a class="button selected">Normal</a>
-								<a class="button">Minified</a>
+								<a class="button selected choose" data-type="normal">Normal</a>
+								<a class="button choose" data-type="minified">Minified</a>
 							</div>
-							<textarea></textarea>
 						</div>
+						<textarea class="text normal"></textarea>
+						<textarea class="text minified hide"></textarea>
+						<p class="text-center">
+							<a class="button close">Close</a>
+						</p>
 					</div>
 				</div>
 
