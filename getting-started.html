@@ -1,256 +1,180 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Getting Started - Marka</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Getting Started - Marka</title>
 
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="./static/marka/css/marka.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/prism.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="./static/marka/css/marka.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/prism.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-36521756-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
-		<div class="page">
-			<div class="nav">
-				<h1><a href="./">Marka</a></h1>
-				<p>Beautiful icon transformations</p>
-				<p>(v0.2.0)</p>
+          ga('create', 'UA-36521756-2', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="page">
+            <div class="nav">
+                <h1><a href="./">Marka</a></h1>
+                <p>Beautiful transformable icons <br> built for the web.</p>
+                <p>(v0.3.0)</p>
 
-				<div class="item">
-					<a href="./getting-started.html" class="button">Getting Started</a> 
-					<br>
-					<a href="./icons.html" class="button">Icons</a>
-					<br>
-					<a href="./api.html" class="button">API</a>
-					<br>
-					<a href="./faq.html" class="button">FAQ</a>
-					<br>
-					<a href="./customize.html" class="button">Customize</a>
-					<br>
-					<a href="https://github.com/fians/marka/" class="button">Github</a>
-				</div>
-			</div>
-			<div class="content">
-				<h1 id="getting-started">Getting Started</h1>
-
+                <div class="item">
+                    <a href="./getting-started.html" class="button">Getting Started</a> 
+                    <br>
+                    <a href="./icons.html" class="button">Icons</a>
+                    <br>
+                    <a href="./api.html" class="button">API</a>
+                    <br>
+                    <a href="./faq.html" class="button">FAQ</a>
+                    <br>
+                    <a href="./customize.html" class="button">Customize</a>
+                    <br>
+                    <a href="https://github.com/fians/marka/" class="button">Github</a>
+                </div>
+            </div>
+            <div class="content">
+<h1 id="getting-started">Getting Started</h1>
 <p>Marka is designed to be easy to use and integrated with
 your website. Download the <a href="https://github.com/fians/marka/releases" target="_blank">latest version of Marka</a> 
 or you can install it via Bower with <code>bower install marka</code>, 
-put the files on your html file, and it’s
+put the files on your html file, and it&#39;s
 ready to use.</p>
-
-<pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+<pre><code class="lang-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;My Website&lt;/title&gt;
-        &lt;link rel="stylesheet" href="/path/to/marka.min.css"&gt;
-        &lt;script src="/path/to/marka.min.js"&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/marka.min.css&quot;&gt;
+        &lt;script src=&quot;/path/to/marka.min.js&quot;&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-
 <h2 id="initialize-marka">Initialize Marka</h2>
-
 <p>Before set the icon you wan to use, you need initialize
 Marka instance on the icon element you want to set up.</p>
-
-<pre><code class="language-markup">&lt;i id="icon"&gt;&lt;/i&gt;
+<pre><code class="lang-markup">&lt;i id=&quot;icon&quot;&gt;&lt;/i&gt;
 
 &lt;script&gt;
-    var m = new Marka('#icon');
+    var m = new Marka(&#39;#icon&#39;);
 &lt;/script&gt;
 </code></pre>
-
 <p>You can also pass jQuery element on Marka parameter,
 like this,</p>
-
-<pre><code class="language-markup">&lt;i id="icon"&gt;&lt;/i&gt;
+<pre><code class="lang-markup">&lt;i id=&quot;icon&quot;&gt;&lt;/i&gt;
 
 &lt;script&gt;
-    var m = new Marka($('#icon'));
+    var m = new Marka($(&#39;#icon&#39;));
 &lt;/script&gt;
 </code></pre>
-
 <p>Or if you want to set multiple icon,</p>
-
-<pre><code class="language-markup">&lt;i class="icon"&gt;&lt;/i&gt;
-&lt;i class="icon"&gt;&lt;/i&gt;
-&lt;i class="icon"&gt;&lt;/i&gt;
+<pre><code class="lang-markup">&lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;icon&quot;&gt;&lt;/i&gt;
 
 &lt;script&gt;
-    var m = new Marka('.icon');
+    var m = new Marka(&#39;.icon&#39;);
 &lt;/script&gt;
 </code></pre>
-
 <p>But, remember. When you initialize multiple 
 element in one Marka instance, all those element
 will be at same Marka instance, which means
 when you set icon, color, size, or rotation 
 with that instance, they (elements) will 
-transform to same state simultaneously. So, it’s
+transform to same state simultaneously. So, it&#39;s
 better to create Marka instance for each element.</p>
-
 <p>Example:</p>
-
-<pre><code class="language-markup">&lt;i id="toggleAccordion"&gt;&lt;/i&gt;
-&lt;i id="toggleModal"&gt;&lt;/i&gt;
+<pre><code class="lang-markup">&lt;i id=&quot;toggleAccordion&quot;&gt;&lt;/i&gt;
+&lt;i id=&quot;toggleModal&quot;&gt;&lt;/i&gt;
 
 &lt;script&gt;
-    var accordionIcon = new Marka('#toggleAccordion');
-    var modalIcon = new Marka('#toggleModal');
+    var accordionIcon = new Marka(&#39;#toggleAccordion&#39;);
+    var modalIcon = new Marka(&#39;#toggleModal&#39;);
 &lt;/script&gt;
 </code></pre>
-
 <h2 id="set-icon">Set Icon</h2>
-
-<p>Marka currently have <a href="./icons.html">18 icons</a> ready to use, 
-and you can see all those icons here. If you feel you didn’t
+<p>Marka currently have <a href="./icons.html">36 icons</a> ready to use, 
+and you can see all those icons here. If you feel you didn&#39;t
 need all Marka icons, you can <a href="./customize.html">customize marka.css</a> to pick 
 icons based on your needs. To set icon 
 you can use <code>set()</code> on Marka instance.</p>
-
-<pre><code class="language-javascript">var m = new Marka('#icon');
-m.set('circle');
+<pre><code class="lang-javascript">var m = new Marka(&#39;#icon&#39;);
+m.set(&#39;circle&#39;);
 </code></pre>
-
 <p>When you need to transform to another icon, just
 apply <code>set()</code> to that instance again.</p>
-
-<pre><code class="language-javascript">var m = new Marka('#icon');
-m.set('circle');
+<pre><code class="lang-javascript">var m = new Marka(&#39;#icon&#39;);
+m.set(&#39;circle&#39;);
 
 // Change after 3 second
 setTimeout(function() {
-    m.set('square');
+    m.set(&#39;square&#39;);
 }, 3000);
 </code></pre>
-
 <h2 id="color-it">Color it</h2>
-
 <p>By default, Marka set black <code>#000000</code> as default color
-of any icon. There is two ways to overide the default color
-of your icon, using CSS directly or Marka API, <code>color()</code>.</p>
-
-<p>When you set icon on Marka instance, Marka will append 
-some <code>&lt;i&gt;</code> inside your icon. So if you want to color 
-your icon directly with CSS, you need to set <code>background-color</code>
-or <code>background</code> of <code>&lt;i&gt;</code> element inside your icon.</p>
-
+of any icon. You can overide the default color
+of your icon, using <code>color()</code>.</p>
 <p>Example:</p>
-
-<pre><code class="language-css">#icon i {
-    background: #ffffff;
-}
-
-/* Or */
-#icon i {
-    background-color: #ffffff;
-}
-</code></pre>
-
-<p>If you dont want to get your hand dirty to write some 
-CSS for each icon. Marka provides you simple <code>color()</code>
-function which can be chained alongside other function on 
-Marka instance.</p>
-
-<p>Example:</p>
-
-<pre><code class="language-javascript">var m = new Marka('#icon');
-m.set('times').color('#ffffff');
+<pre><code class="lang-javascript">var m = new Marka(&#39;#icon&#39;);
+m.set(&#39;times&#39;).color(&#39;#ffffff&#39;);
 
 // Transform color after 3 second
 setTimeout(function() {
-    m.color('#ff00000');
+    m.color(&#39;#ff00000&#39;);
 }, 3000);
 </code></pre>
-
 <h2 id="change-size">Change size</h2>
-
 <p>Because created with HTML element, every Marka icon
-is scalable, so you can change to every size you want.
-Just like when you want to change the color, you 
-can change icon size directly with CSS or using <code>size()</code>
-function.</p>
-
-<p>You have to make sure <code>width</code> and <code>height</code> at
-same value when you want to change size the icon with 
-CSS. Because when <code>width</code> and <code>height</code> value is not same,
-your icon probably will be broken.</p>
-
-<p>Example:</p>
-
-<pre><code class="language-css">/* Wrong! */
-#icon {
-    width:20px;
-    height:25px;
-}
-
-/* Correct! */
-#icon {
-    width: 20px;
-    height: 20px;
-}
-</code></pre>
-
-<p>With <code>size()</code>, you can change size of your icon without
-talk directly with CSS.</p>
-
-<pre><code class="language-javascript">var m = new Marka('#icon');
-m.set('circle').size(20); // Set icon size to 20px;
+is scalable. You can change to every size you want 
+using <code>size()</code> function.</p>
+<pre><code class="lang-javascript">var m = new Marka(&#39;#icon&#39;);
+m.set(&#39;circle&#39;).size(20); // Set icon size to 20px;
 
 // Transform to larger icon after 3 second
 setTimeout(function() {
     m.size(30);
 }, 3000);
 </code></pre>
-
 <h2 id="rotate-it">Rotate it</h2>
-
 <p>Marka allows you to change direction of your icon
-with <code>rotate()</code> function. The direction can be ‘up’,
-‘down’, ‘left’, or ‘right’ and very useful if you
+with <code>rotate()</code> function. The direction can be &#39;up&#39;,
+&#39;down&#39;, &#39;left&#39;, or &#39;right&#39; and very useful if you
 combine it with arrow icon.</p>
-
 <p>Example:</p>
-
-<pre><code class="language-javascript">var m = new Marka('#icon');
-m.set('arrow').rotate('left');
+<pre><code class="lang-javascript">var m = new Marka(&#39;#icon&#39;);
+m.set(&#39;arrow&#39;).rotate(&#39;left&#39;);
 
 // or down
-m.rotate('down');
+m.rotate(&#39;down&#39;);
 
 // or right
-m.rotate('right');
+m.rotate(&#39;right&#39;);
 
 // or up again
-m.rotate('up');
+m.rotate(&#39;up&#39;);
 </code></pre>
 
-
-				<div class="footer">
-					2014 &copy; <a href="http://fian.my.id/">Alfiana E. Sibuea</a>. All right reserved.
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript" src="./static/marka/js/marka.js"></script>
-		<script type="text/javascript" src="./static/js/jquery.min.js"></script>
-		<script type="text/javascript" src="./static/js/prism.js"></script>
-		<script type="text/javascript" src="./static/js/main.js"></script>
-	</body>
+                <div class="footer">
+                    2014 &copy; <a href="http://fian.my.id/">Alfiana E. Sibuea</a>. All right reserved.
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./static/marka/js/marka.js"></script>
+        <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="./static/js/prism.js"></script>
+        <script type="text/javascript" src="./static/js/main.js"></script>
+    </body>
 </html>

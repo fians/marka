@@ -1,0 +1,18 @@
+/* Circle Minus icon */
+.marka.marka-icon-circle-minus i {
+  border-radius: 50%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.marka.marka-icon-circle-minus i:last-child,
+.marka.marka-icon-circle-minus i:nth-last-child(2) {
+  border-radius: 0%;
+  -webkit-transform: rotate(0deg) scale(0.5, 0.125);
+  -moz-transform: rotate(0deg) scale(0.5, 0.125);
+  -ms-transform: rotate(0deg) scale(0.5, 0.125);
+  -o-transform: rotate(0deg) scale(0.5, 0.125);
+  transform: rotate(0deg) scale(0.5, 0.125);
+}

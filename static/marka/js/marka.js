@@ -1,6 +1,6 @@
 
 /*! 
- * Marka - v0.2.0 
+ * Marka - v0.3.0-dev 
  * http://fian.my.id/marka 
  * 
  * Copyright 2014 Alfiana E. Sibuea and other contributors 
@@ -14,35 +14,162 @@
     // Blocks needed to create the icon
     var blockList = {
 
-    	'circle': 1,
-    	'square': 1,
-    	'triangle': 3,
+    	/* Circle Icons */
+    	'circle': {
+    		block: 2
+    	},
+    	'circle-o': {
+    		block: 3,
+    		invert: [1]
+    	},
+    	'circle-o-filled': {
+    		block: 3,
+    		invert: [1]
+    	},
 
-    	'asterisk': 3,
-    	'minus': 1,
-    	'plus': 2,
-    	'times': 2,
+    	'circle-minus': {
+    		block: 3,
+    		invert: 'last'
+    	},
+    	'circle-plus': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
+    	'circle-times': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
 
-    	'check': 2,
-    	'sort': 6,
-    	'sort-half': 3,
+    	'circle-o-minus': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'circle-o-plus': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'circle-o-times': {
+    		block: 4,
+    		invert: [1]
+    	},
 
-    	'signal-three-one': 3,
-    	'signal-three-two': 3,
-    	'signal-three': 3,
-    	'signal-five-one': 5,
-    	'signal-five-two': 5,
-    	'signal-five-three': 5,
-    	'signal-five-four': 5,
-    	'signal-five': 5,
+    	'square': {
+    		block: 2
+    	},
+    	'square-o': {
+    		block: 3,
+    		invert: [1]
+    	},
+    	'square-o-filled': {
+    		block: 3,
+    		invert: [1]
+    	},
 
-    	'pause': 2,
+    	'square-minus': {
+    		block: 3,
+    		invert: 'last'
+    	},
+    	'square-plus': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
+    	'square-times': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
+    	'square-check': {
+    		block: 3,
+    		invert: 'last-two'
+    	},
 
-    	'angle': 2,
-    	'angle-double': 4,
-    	'arrow': 3,
-    	'bars': 3,
-    	'chevron': 2,
+    	'square-o-minus': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'square-o-plus': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'square-o-times': {
+    		block: 4,
+    		invert: [1]
+    	},
+    	'square-o-check': {
+    		block: 4,
+    		invert: [1]
+    	},
+
+    	'triangle': {
+    		block: 3
+    	},
+
+    	'asterisk': {
+    		block: 3
+    	},
+    	'minus': {
+    		block: 1
+    	},
+    	'plus': {
+    		block: 2
+    	},
+    	'times': {
+    		block: 2
+    	},
+
+    	'check': {
+    		block: 2
+    	},
+    	'sort': {
+    		block: 6
+    	},
+    	'sort-half': {
+    		block: 3
+    	},
+
+    	'signal-three-one': {
+    		block: 3
+    	},
+    	'signal-three-two': {
+    		block: 3
+    	},
+    	'signal-three': {
+    		block: 3
+    	},
+    	'signal-five-one': {
+    		block: 5
+    	},
+    	'signal-five-two': {
+    		block: 5
+    	},
+    	'signal-five-three': {
+    		block: 5
+    	},
+    	'signal-five-four': {
+    		block: 5
+    	},
+    	'signal-five': {
+    		block: 5
+    	},
+
+    	'pause': {
+    		block: 2
+    	},
+
+    	'angle': {
+    		block: 2
+    	},
+    	'angle-double': {
+    		block: 4
+    	},
+    	'arrow': {
+    		block: 3
+    	},
+    	'bars': {
+    		block: 3
+    	},
+    	'chevron': {
+    		block: 2
+    	},
     };
 
     function applyFunc(el, callback) {
@@ -55,6 +182,65 @@
 			o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName==="string"
 		);
 	}
+
+    function changeColor(el, color) {
+
+        // Set color
+        el.setAttribute('data-color', color);
+
+        // Total block count
+        var icon = el.getAttribute('data-icon');
+        var blockCount = el.children.length;
+
+        // Check inverted color block position
+        var invertedBlock = [];
+
+        if (blockList[icon].hasOwnProperty('invert')) {
+
+            switch (blockList[icon].invert) {
+                case 'last':
+                    invertedBlock = [(blockCount-1)];
+                    break;
+                case 'last-two':
+                    invertedBlock = [(blockCount-2), (blockCount-1)];
+                    break;
+                default:
+                    invertedBlock = blockList[icon].invert;
+            }
+        }
+
+        for (var b = 0; b < blockCount; b++) {
+
+            var currentColor = color;
+
+            if (invertedBlock.indexOf(b) !== -1) {
+                currentColor = el.getAttribute('data-bg');
+            }
+
+            el.children[b].setAttribute('style', 'background-color:'+currentColor);
+        }
+    }
+
+    function setBackground(el) {
+
+        var parent = el.parentNode, 
+            backgroundColor = 'rgba(0, 0, 0, 0)';
+
+        do {
+            backgroundColor = window.getComputedStyle(parent)['background-color'];
+            parent = parent.parentNode;
+            if (backgroundColor !== 'rgba(0, 0, 0, 0)') {
+                break;
+            }
+
+        } while ('tagName' in parent);
+
+        if (backgroundColor === 'rgba(0, 0, 0, 0)') {
+            backgroundColor = 'rgb(255, 255, 255)';
+        }
+
+        el.setAttribute('data-bg', backgroundColor);
+    }
 
 	function Marka(el) {
 		
@@ -82,6 +268,10 @@
 		}
 
 		applyFunc(this.elements, function(i) {
+
+			// Set background color
+            setBackground(i);
+
 			if (i.className.indexOf('marka') === -1) {
 				i.className += ' marka ';
 			}
@@ -97,24 +287,38 @@
 
 		applyFunc(this.elements, function(i) {
 
-			var blockCount = i.childNodes.length;
+			// Set icon name
+			i.setAttribute('data-icon', icon);
+
+			// Get data-color
+			var color = i.getAttribute('data-color');
+
+			if (!color) {
+				color = 'rgb(0, 0, 0)';
+				i.setAttribute('data-color', color);
+			}
+
+			var blockCount = i.children.length;
 
 			// Append blocks
-			if (blockList[icon] > blockCount) {
-				for (var a = 0; a < (blockList[icon] - blockCount); a++) {
+			if (blockList[icon].block > blockCount) {
+				for (var a = 0; a < (blockList[icon].block - blockCount); a++) {
+
 					var span = document.createElement('i');
-					if ('colorValue' in el) {
-						span.setAttribute('style', 'background-color:'+el.colorValue);
-					}
+
 					i.appendChild(span);
 				}
 			}
+
+            // Change color
+            setBackground(i);
+            changeColor(i, color);
 
 			// Prevent blink transition
 			setTimeout(function() {
 
 				// Change class			
-				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w]+/, '');
+				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w-]+/, '');
 				i.className += 'marka-icon-'+icon+' ';
 
 				if ('sizeValue' in el) {
@@ -137,12 +341,9 @@
 
 	Marka.prototype.color = function(color) {
 
-		this.colorValue = color;
-
 		applyFunc(this.elements, function(i) {
-			for (var a = 0; a < i.childNodes.length; a++) {
-				i.childNodes[a].setAttribute('style', 'background-color:'+color);
-			}
+            setBackground(i);
+            changeColor(i, color);
 		});	
 
 		return this;

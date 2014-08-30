@@ -1,4 +1,0 @@
-marka
-=====
-
-Beautiful icon transformation.
