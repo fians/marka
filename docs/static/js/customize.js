@@ -70,56 +70,6 @@
                 +' */ \n';
 	}
 
-	function generateCSS() {
-
-		var btn = $(this);
-		var loading = $('#custom #generate');
-
-		// Prevent action while generating file
-		if (!loading.hasClass('hide')) {
-			return false;
-		}
-
-		// Disable button and start loading state
-		btn.attr('disabled', 'disabled');
-		loading.removeClass('hide');
-
-		// Set header and core css
-		var core = $.ajax({
-			type: 'GET',
-			url: './static/marka/css/src/marka-core.css',
-			async: false
-		}).responseText + '\n';
-
-		var content = getHeader() + core;
-
-		// Get other css icon
-		for (var a = 0; a < choosenIcons.length; a++) {
-			content += $.ajax({
-				type: 'GET',
-				url: './static/marka/css/src/icons/icon-'+choosenIcons[a]+'.css',
-				async: false
-			}).responseText + '\n';
-		}
-
-		// Minified files if needed
-		if (btn.data('type') === 'min') {
-			content = YAHOO.compressor.cssmin(content);
-		}
-
-		// Convert to data-URI
-		var dataURI = 'data:text/css;charset=UTF-8,' + encodeURIComponent(content);
-
-  		// Remove loading state
-		btn.removeAttr('disabled');
-		loading.addClass('hide');
-
-		// Open in new tab
-		var win = window.open(dataURI, '_blank');
-  		win.focus();
-
-	}
-
 	/**
 	 * Generate customize download
 	 */
