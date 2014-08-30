@@ -18,7 +18,7 @@ p {
 }
 
 pre {
-  line-height:120%;
+    line-height:120%;
 }
 
 .clear {
@@ -98,6 +98,7 @@ a.button[disabled]:hover {
     padding:10px 20px;
     line-height:160%;
     overflow:auto;
+    white-space: pre;
 }
 
 #code .italic {
@@ -164,13 +165,13 @@ a.button[disabled]:hover {
 
 /** Page **/
 .page {
-  margin:0 auto;
+    margin:0 auto;
 }
 
 .page .nav {
-position:fixed;
+    position:fixed;
     padding:20px;
-  width:30%;
+    width:30%;
     height:100%;
     color:#fff;
     background: #FF6600;
@@ -178,159 +179,229 @@ position:fixed;
 }
 
 .page .nav h1 {
-  font-size:50px;
+    font-size:50px;
 }
 
 .page .nav a {
-  color:#fff;
+    color:#fff;
 }
 
 .page .nav a:hover {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 .page .nav .button {
-  margin:5px;
+    margin:5px;
 }
 
 .page .nav a.button:hover {
-  color:#ff6600;
+    color:#ff6600;
 }
 
 .page .nav .item {
-  margin-top:30px;
+    margin-top:30px;
 }
 
 .page .content {
-  margin-left:30%;
-  padding:50px 30px;
-  width:500px;
+    margin-left:30%;
+    padding:50px 30px;
+    width:500px;
 }
 
 .page .content h1,
 .page .content h2,
 .page .content p {
-  padding:10px;
+    padding:10px;
 }
 
 .page .content h1,
 .page .content h2 {
-  border-bottom:1px solid #FF6600;
+    border-bottom:1px solid #FF6600;
 }
 
 .page .content h1 {
-  font-size:40px;
+    font-size:40px;
 }
 
 .page .content h2 {
-  font-size:25px;
+    font-size:25px;
 }
 
 .page .content p code,
 .page .content .iconList code {
-  display:inline-block;
-  background:#ddd;
-  padding:0px 7px;
-  border-radius:5px;
-  border: 1px solid #ccc;
+    display:inline-block;
+    background:#ddd;
+    padding:0px 7px;
+    border-radius:5px;
+    border: 1px solid #ccc;
 }
 
 /* Icon list */
 .page .iconList .item {
-  float:left;
-  width:140px;
-  padding:15px 10px;
-}
-
-.iconList .item .icons {
+    float:left;
+    width:140px;
+    padding:15px 10px;
 }
 
 .page .iconList .icons {
-  display:block;
-  margin:10px auto;
-  width:30px;
-  height:30px;
-  vertical-align:middle;
-  cursor:pointer;
+    display:block;
+    margin:10px auto;
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+    cursor:pointer;
 }
 
 .page .content .iconList code {
-  display:block;
-  text-align:center;
+    display:block;
+    text-align:center;
 }
 
 /* FAQ */
 .page ol {
-  margin-top:30px;
+    margin-top:30px;
 }
 
 .page ol > li {
-  margin:20px 0px;
+    margin:20px 0px;
 }
 
 /* API */
 .page h3 {
-  margin-top:40px;
-  font-size:20px;
-  padding:10px;
-  border-bottom:1px solid #ccc;
+    margin-top:40px;
+    font-size:20px;
+    padding:10px;
+    border-bottom:1px solid #ccc;
 }
 
 /* Custom */
 #custom .compile {
-  margin-top:30px;
+    margin-top:30px;
 }
 
 #custom .compile .button {
-  display:block;
-  float:right;
-  width:150px;
-  margin:5px;
-  text-align:center;
+    display:block;
+    float:right;
+    width:150px;
+    margin:5px;
+    text-align:center;
 }
 
 #custom .iconList .item {
-  margin:5px;
-  width:100px;
-  text-align:center;
-  padding:15px 5px 10px;
-  border-radius:5px;
-  border: 1px solid #ccc;
-  cursor:pointer;
+    margin:5px;
+    width:100px;
+    text-align:center;
+    padding:15px 5px 10px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    cursor:pointer;
 }
 
 #custom .iconList .item i {
-  display:block;
-  margin:0 auto;
-  -webkit-transition:none;
-  -moz-transition:none;
-  -o-transition:none;
-  transition:none;
+    display:block;
+    margin:0 auto;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -o-transition:none;
+    transition:none;
 }
 
 
 #custom .iconList .iteam:hover,
 #custom .iconList .item.selected {
-  background:#ff6600;
-  color:#fff;
+    background:#ff6600;
+    color:#fff;
 }
 
 #custom .iconList .iteam:hover i > i,
 #custom .iconList .item.selected i > i {
-  background:#fff;
+    background:#fff;
 }
 
 #custom #generate {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  padding:10px;
-  text-align:center;
-  background:#ff6600;
-  color:#fff;
-  border-bottom:1px solid #fff;
-  z-index:1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:10px;
+    text-align:center;
+    background:#ff6600;
+    color:#fff;
+    border-bottom:1px solid #fff;
+    z-index:1;
+}
+
+#compilePopup {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+#compilePopup .wrapper {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+}
+
+#compilePopup .box {
+    position:absolute;  
+    top:50%;
+    left:50%;
+    margin-top:-225px;
+    margin-left:-250px;
+    width:500px;
+    height:450px;
+    background:#fff;
+}
+
+#compilePopup h2 {
+    padding-left:20px;
+}
+
+#compilePopup .option {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+
+#compilePopup .button {
+    color: #ff6600;
+    border-color: #ff6600;
+}
+
+#compilePopup .button:hover,
+#compilePopup .button.selected {
+    color:#fff;
+    background: #ff6600;
+}
+
+#compilePopup .text {
+    width:460px;
+    height:290px;
+    margin:20px;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    white-space:pre;
+    overflow:auto;
+    font-family:monospace;
+    line-height:160%;
+    display:block;
+    resize:none;
+}
+
+#compilePopup p {
+    padding:0;
+}
+
+#compilePopup .close {
+    padding: 5px 20px;
 }
 
 .page .content .footer {

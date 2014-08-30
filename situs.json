@@ -1,0 +1,7 @@
+{
+    "source": "./docs",
+    "ignore": [
+        "layouts/**/*"
+    ],
+    "markdown": true
+}

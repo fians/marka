@@ -1,0 +1,25 @@
+/* Square Check icon */
+.marka.marka-icon-square-check i {
+  border-radius: 10%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.marka.marka-icon-square-check i:last-child {
+  border-radius: 0%;
+  -webkit-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -moz-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -ms-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  -o-transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+  transform: rotate(-45deg) scale(0.5, 0.125) translate(7%, 35%);
+}
+.marka.marka-icon-square-check i:nth-last-child(2) {
+  border-radius: 0%;
+  -webkit-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -moz-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -ms-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  -o-transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+  transform: rotate(45deg) scale(0.3, 0.125) translate(-15%, 123%);
+}

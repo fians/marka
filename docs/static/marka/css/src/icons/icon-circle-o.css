@@ -1,0 +1,23 @@
+/* Circle-O icon */
+.marka.marka-icon-circle-o i {
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg) scale(0);
+  -moz-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  -o-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+}
+.marka.marka-icon-circle-o i:nth-child(1) {
+  -webkit-transform: rotate(0deg) scale(0.8);
+  -moz-transform: rotate(0deg) scale(0.8);
+  -ms-transform: rotate(0deg) scale(0.8);
+  -o-transform: rotate(0deg) scale(0.8);
+  transform: rotate(0deg) scale(0.8);
+}
+.marka.marka-icon-circle-o i:nth-child(2) {
+  -webkit-transform: rotate(0deg) scale(0.65);
+  -moz-transform: rotate(0deg) scale(0.65);
+  -ms-transform: rotate(0deg) scale(0.65);
+  -o-transform: rotate(0deg) scale(0.65);
+  transform: rotate(0deg) scale(0.65);
+}

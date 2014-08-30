@@ -1,0 +1,17 @@
+@import "../mixin.less";
+
+/* Circle Plus icon */
+.marka.marka-icon-circle-plus i {
+    border-radius: 50%;
+    .transform(scale(0.8));
+
+	&:last-child {
+		border-radius: 0%;
+	    .transform(rotate(0deg) scale(0.5, 0.125));
+	}
+
+	&:nth-last-child(2) {
+		border-radius: 0%;
+	    .transform(rotate(90deg) scale(0.5, 0.125));
+	}
+}

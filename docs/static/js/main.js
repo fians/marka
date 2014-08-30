@@ -21,18 +21,38 @@
     	'square',
     	'triangle',
 
-    	// Math
+    	// Sign & Form
     	'minus',
     	'plus',
     	'times',
     	'asterisk',
-
-    	// Form & List
     	'check',
-    	'sort',
-    	'sort-half',
+
+		'circle-minus',
+		'circle-plus',
+		'circle-times',
+
+		'circle-o',
+		'circle-o-filled',
+		'circle-o-minus',
+		'circle-o-plus',
+		'circle-o-times',
+
+    	'square-minus',
+    	'square-plus',
+    	'square-check',
+    	'square-times',
+
+    	'square-o',
+    	'square-o-filled',
+    	'square-o-minus',
+    	'square-o-plus',
+    	'square-o-check',
+    	'square-o-times',
 
     	// App
+    	'sort',
+    	'sort-half',
     	'signal-three-one',
     	'signal-three-two',
     	'signal-three',
@@ -44,8 +64,6 @@
 
     	// Audio
     	'pause',
-    	'forward',
-    	'backward',
 
     	// Navigation
     	'bars',
@@ -83,15 +101,15 @@
 		var str = 'm.set(<span class="string">\''+markaValue.set+'\'</span>)';
 		
 		if (markaValue.color) {
-			str += '.color(<span class="string">\''+markaValue.color+'\'</span>)';
+			str += '\n    .color(<span class="string">\''+markaValue.color+'\'</span>)';
 		}
 
 		if (markaValue.size) {
-			str += '.size(<span class="string">\''+markaValue.size+'\'</span>)';
+			str += '\n    .size(<span class="string">\''+markaValue.size+'\'</span>)';
 		}
 
 		if (markaValue.rotate) {
-			str += '.rotate(<span class="string">\''+markaValue.rotate+'\'</span>)';
+			str += '\n    .rotate(<span class="string">\''+markaValue.rotate+'\'</span>)';
 		}
 
 		str += ';';
@@ -125,25 +143,6 @@
 
 		marka.set(set);
 		$('#icon').data('icon', set);
-
-		generateCode();
-	}
-
-	function rotateIcon() {
-
-		var currPos = markaRotate.indexOf($('#icon').data('rotate'));
-		var newPos = 0;
-
-		newPos = currPos + 1;
-		if (newPos > (markaRotate.length - 1)) {
-			newPos = 0;
-		}
-
-		var direction = markaRotate[newPos];
-		markaValue.rotate = direction;
-
-		marka.rotate(direction);
-		$('#icon').data('rotate', direction);
 
 		generateCode();
 	}
@@ -192,7 +191,6 @@
 		$('#nextIcon').on('click', function() {
 			return navIcon('next');
 		});
-		$('#icon').on('click', rotateIcon);
 
 	});
 

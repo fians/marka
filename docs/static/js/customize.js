@@ -33,6 +33,7 @@
 
 		var el = $(this);
 		var type = el.data('type');
+		var m = new Marka($(this).find('i')[0]);
 
 		// Remove selected
 		if (el.hasClass('selected')) {
@@ -43,13 +44,17 @@
 			}
 			
 			updateIconCount();
-			return el.removeClass('selected');
+			el.removeClass('selected');
+			return m.color('#000');
+
 		}
 
 		// Add selected
 		choosenIcons.push(type);
 		updateIconCount();
-		return el.addClass('selected');
+		el.addClass('selected');
+		return m.color('#fff');
+		
 	}
 
 	function getHeader() {
@@ -65,7 +70,10 @@
                 +' */ \n';
 	}
 
-	function generateCSS() {
+	/**
+	 * Generate customize download
+	 */
+	function download() {
 
 		var btn = $(this);
 		var loading = $('#custom #generate');
@@ -74,10 +82,6 @@
 		if (!loading.hasClass('hide')) {
 			return false;
 		}
-
-		// Disable button and start loading state
-		btn.attr('disabled', 'disabled');
-		loading.removeClass('hide');
 
 		// Set header and core css
 		var core = $.ajax({
@@ -97,22 +101,31 @@
 			}).responseText + '\n';
 		}
 
-		// Minified files if needed
-		if (btn.data('type') === 'min') {
-			content = YAHOO.compressor.cssmin(content);
-		}
+		var minified = YAHOO.compressor.cssmin(content);
 
-		// Convert to data-URI
-		var dataURI = 'data:text/css;charset=UTF-8,' + encodeURIComponent(content);
+		$('#compilePopup textarea.normal').text(content);
+		$('#compilePopup textarea.minified').text(minified);
+		$('#compilePopup').removeClass('hide');
+	}
 
-  		// Remove loading state
-		btn.removeAttr('disabled');
-		loading.addClass('hide');
+	/**
+	 * Choose custom compilation
+	 */
+	function chooseCustom() {
+		$('#compilePopup textarea').addClass('hide');
+		$('#compilePopup .choose').removeClass('selected');
 
-		// Open in new tab
-		var win = window.open(dataURI, '_blank');
-  		win.focus();
+		$('#compilePopup textarea.'+$(this).data('type'))
+			.removeClass('hide');
 
+		$(this).addClass('selected');
+	}
+
+	/**
+	 * Close popup
+	 */
+	function closePopup() {
+		$('#compilePopup').addClass('hide');
 	}
 
 	$(document).on('ready', function() {
@@ -128,6 +141,11 @@
 
 		// Generate file
 		$('.generateCSS').on('click', generateCSS);
+
+		$('#download').on('click', download);
+		$('#compilePopup .choose').on('click', chooseCustom);
+		$('#compilePopup .wrapper').on('click', closePopup);
+		$('#compilePopup .close').on('click', closePopup);
 	});
 
 })(window, jQuery);

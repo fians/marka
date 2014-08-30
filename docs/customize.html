@@ -1,42 +1,19 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="msapplication-tap-highlight" content="no"/> 
 
-		<title>Customize Your Icon Set - Marka</title>
-		<meta name="description" content="The easy and beautiful way to transform your icon" />
-
-		<link rel="stylesheet" type="text/css" href="./static/marka/css/marka.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
-
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-36521756-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
+@situs-include(./layouts/header.html)
+@situs-data({
+    "title": "Customize Your Icons Set - Marka"
+})
 
 		<div id="custom" class="page">
 			<div id="generate" class="hide">Generating your file...</div>
 			<div class="nav">
-				<h1><a href="./">Marka</a></h1>
-				<p>Beautiful icon transformations</p>
-				<p>(v0.2.0)</p>
+				<h1><a href="./getting-started.html">Marka</a></h1>
+				<p>Beautiful transformable icons <br> built for the web.</p>
+				<p>(v0.3.0)</p>
 
 				<div class="compile">
 					<h4><span id="iconsCount">No icon</span> selected</h4>
-					<h4>Download:</h4>
-					<a class="button generateCSS" data-type="normal">CSS</a> 
-					<a class="button generateCSS" data-type="min">CSS (minified)</a>
+					<h4><a id="download" class="button">Download</a></h4>
 				</div>
 			</div>
 			<div class="content">
@@ -65,33 +42,121 @@
 				</div>
 				<div class="clear"></div>
 
-				<h2>Math</h2>
+				<h2>Sign & Form</h2>
 				<div class="iconList">
-					<div class="item" data-type="plus">
-						<i class="icons"></i>
-						Plus
-					</div>
 					<div class="item" data-type="minus">
 						<i class="icons"></i>
 						Minus
+					</div>
+					<div class="item" data-type="plus">
+						<i class="icons"></i>
+						Plus
 					</div>
 					<div class="item" data-type="times">
 						<i class="icons"></i>
 						Times
 					</div>
-					<div class="item" data-type="asterisk">
-						<i class="icons"></i>
-						Asterisk
-					</div>
-				</div>
-				<div class="clear"></div>
-
-				<h2>Form & List</h2>
-				<div class="iconList">
 					<div class="item" data-type="check">
 						<i class="icons"></i>
 						Check
 					</div>
+					<div class="item" data-type="asterisk">
+						<i class="icons"></i>
+						Asterisk
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="item" data-type="circle-minus">
+						<i class="icons"></i>
+						Circle Minus
+					</div>
+					<div class="item" data-type="circle-plus">
+						<i class="icons"></i>
+						Circle Plus
+					</div>
+					<div class="item" data-type="circle-times">
+						<i class="icons"></i>
+						Circle Times
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="item" data-type="circle-o-minus">
+						<i class="icons"></i>
+						Circle-O Minus
+					</div>
+					<div class="item" data-type="circle-o-plus">
+						<i class="icons"></i>
+						Circle-O Plus
+					</div>
+					<div class="item" data-type="circle-o-times">
+						<i class="icons"></i>
+						Circle-O Times
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="item" data-type="square-minus">
+						<i class="icons"></i>
+						Square Minus
+					</div>
+					<div class="item" data-type="square-plus">
+						<i class="icons"></i>
+						Square Plus
+					</div>
+					<div class="item" data-type="square-times">
+						<i class="icons"></i>
+						Square Times
+					</div>
+					<div class="item" data-type="square-check">
+						<i class="icons"></i>
+						Square Check
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="item" data-type="square-o-minus">
+						<i class="icons"></i>
+						Square-O Minus
+					</div>
+					<div class="item" data-type="square-o-plus">
+						<i class="icons"></i>
+						Square-O Plus
+					</div>
+					<div class="item" data-type="square-o-times">
+						<i class="icons"></i>
+						Square-O Times
+					</div>
+					<div class="item" data-type="square-o-check">
+						<i class="icons"></i>
+						Square-O Check
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="item" data-type="circle-o">
+						<i class="icons"></i>
+						Circle-O
+					</div>
+					<div class="item" data-type="circle-o-filled">
+						<i class="icons"></i>
+						Circle-O (filled)
+					</div>
+					<div class="item" data-type="square-o">
+						<i class="icons"></i>
+						Square-O
+					</div>
+					<div class="item" data-type="square-o-filled">
+						<i class="icons"></i>
+						Square-O (filled)
+					</div>
+
+				</div>
+				<div class="clear"></div>
+
+				<h2>Application</h2>
+				<div class="iconList">
 					<div class="item" data-type="sort">
 						<i class="icons"></i>
 						Sort
@@ -100,11 +165,6 @@
 						<i class="icons"></i>
 						Sort Half
 					</div>
-				</div>
-				<div class="clear"></div>
-
-				<h2>Application</h2>
-				<div class="iconList">
 					<div class="item" data-type="signal-three">
 						<i class="icons"></i>
 						Signal 3 Bars
@@ -121,14 +181,6 @@
 					<div class="item" data-type="pause">
 						<i class="icons"></i>
 						Pause
-					</div>
-					<div class="item" data-type="forward">
-						<i class="icons"></i>
-						Forward
-					</div>
-					<div class="item" data-type="backward">
-						<i class="icons"></i>
-						Backward
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -158,11 +210,30 @@
 				</div>
 				<div class="clear"></div>
 
+				<div id="compilePopup" class="hide">
+					<div class="wrapper"></div>
+					<div class="box">
+						<div class="header">
+							<h2>CSS</h2>
+							<div class="option">
+								<a class="button selected choose" data-type="normal">Normal</a>
+								<a class="button choose" data-type="minified">Minified</a>
+							</div>
+						</div>
+						<textarea class="text normal"></textarea>
+						<textarea class="text minified hide"></textarea>
+						<p class="text-center">
+							<a class="button close">Close</a>
+						</p>
+					</div>
+				</div>
+
 				<div class="footer">
 					2014 &copy; <a href="http://fian.my.id/">Alfiana E. Sibuea</a>. All right reserved.
 				</div>
 			</div>
 		</div>
+
 		<script type="text/javascript" src="./static/marka/js/marka.js"></script>
 		<script type="text/javascript" src="./static/js/cssmin.js"></script>
 		<script type="text/javascript" src="./static/js/jquery.min.js"></script>
