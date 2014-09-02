@@ -31,14 +31,14 @@ module.exports = function(grunt) {
         // Add license
         concat: {
             options: {
-              banner: '\n/*! \n' 
-                +' * Marka - v<%= pkg.version %> \n' 
-                +' * http://fian.my.id/marka \n' 
-                +' * \n' 
-                +' * Copyright 2014 Alfiana E. Sibuea and other contributors \n' 
-                +' * Released under the MIT license \n' 
-                +' * https://github.com/fians/marka/blob/master/LICENSE \n' 
-                +' */ \n',
+              banner: '\n/*! \n' +
+                ' * Marka - v<%= pkg.version %> \n' + 
+                ' * http://fian.my.id/marka \n' + 
+                ' * \n' + 
+                ' * Copyright 2014 Alfiana E. Sibuea and other contributors \n' + 
+                ' * Released under the MIT license \n' + 
+                ' * https://github.com/fians/marka/blob/master/LICENSE \n' + 
+                ' */ \n',
             },
             css: {
                 src: ['src/css/marka-core.css', 'src/css/icons/*.css'],
@@ -135,4 +135,4 @@ module.exports = function(grunt) {
     
     // Create grunt task
     grunt.registerTask('build', ['less', 'concat', 'cssmin', 'jshint', 'uglify', 'copy']);
-}
+};
