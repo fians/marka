@@ -1,6 +1,6 @@
 
 /*! 
- * Marka - v0.3.0-dev 
+ * Marka - v0.3.1 
  * http://fian.my.id/marka 
  * 
  * Copyright 2014 Alfiana E. Sibuea and other contributors 
@@ -227,15 +227,16 @@
             backgroundColor = 'rgba(0, 0, 0, 0)';
 
         do {
-            backgroundColor = window.getComputedStyle(parent)['background-color'];
+            backgroundColor = window.getComputedStyle(parent).backgroundColor;
             parent = parent.parentNode;
+            
             if (backgroundColor !== 'rgba(0, 0, 0, 0)') {
                 break;
             }
 
         } while ('tagName' in parent);
 
-        if (backgroundColor === 'rgba(0, 0, 0, 0)') {
+        if (backgroundColor === 'rgba(0, 0, 0, 0)' || backgroundColor === 'transparent') {
             backgroundColor = 'rgb(255, 255, 255)';
         }
 
