@@ -140,8 +140,6 @@
 		$('.iconList .item').on('click', toggleIcon);
 
 		// Generate file
-		$('.generateCSS').on('click', generateCSS);
-
 		$('#download').on('click', download);
 		$('#compilePopup .choose').on('click', chooseCustom);
 		$('#compilePopup .wrapper').on('click', closePopup);
