@@ -16,6 +16,6 @@ FAQ
 	- Yes, you can customize it [here](./customize.html).
 
 2. **I found a bug, where should I reported to?**
-	- Oh, great! Just report the issue in [Marka's Github repo](https://github.com/fians/marka/issues).
+	- Oh, great! Just report the issue in [Marka's GitHub repo](https://github.com/fians/marka/issues).
     
 @situs-include(./layouts/page-footer.html)
