@@ -13,6 +13,9 @@ Here are some steps to build the documentation locally on your computer:
 4. Go to the Marka directory and just start the Situs server (`situs server`).
 5. Then visit [http://localhost:4000/](http://localhost:4000/) on your browser.
 
+## Development
+Marka's master branch only contains v0.3.*. For the next version of Marka (v0.4.0) please see [v0.4.0-dev branch](https://github.com/fians/marka/tree/v0.4.0-dev).
+
 ## License
 
 Marka is released under the [MIT license](https://github.com/fians/marka/blob/master/LICENSE). 2014 (c) Alfiana Sibuea. All right reserved.
