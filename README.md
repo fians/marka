@@ -2,6 +2,8 @@
 
 Marka is transform-able icon set, beautifully and carefully designed to work on the web. View a demo and read the documentation on http://fian.my.id/marka.
 
+IMPORTANT: I decided to put Marka as experimental project. It means I will not put any update on Marka for the future. If you want to make your own version of Marka, feel free to fork it.
+
 ## Documentation
 
 Marka uses [Situs](https://github.com/fians/situs) to generate the docs. 
