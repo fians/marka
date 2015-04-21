@@ -265,7 +265,7 @@
             setBackground(i);
 
 			if (i.className.indexOf('marka') === -1) {
-				i.className += ' marka ';
+				i.className += ' marka';
 			}
 		});
 
