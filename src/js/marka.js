@@ -265,7 +265,7 @@
             setBackground(i);
 
 			if (i.className.indexOf('marka') === -1) {
-				i.className += ' marka ';
+				i.className += ' marka';
 			}
 		});
 
@@ -310,8 +310,7 @@
 			setTimeout(function() {
 
 				// Change class			
-				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w-]+/, '');
-				i.className += 'marka-icon-'+icon+' ';
+				i.className = i.className.replace('  ', ' ').replace(/marka-icon-[\w-]+/g, '') + ' marka-icon-'+icon;
 
 				if ('sizeValue' in el) {
 					i.setAttribute('style', 'width:'+el.sizeValue+'px;height:'+el.sizeValue+'px;');
@@ -320,7 +319,7 @@
 				// Show icon if it's not shown
 				if (i.className.indexOf('marka-set') === -1) {
 					setTimeout(function() {
-						i.className += 'marka-set ';
+						i.className += ' marka-set';
 					}, 200);
 				}
 
@@ -355,8 +354,7 @@
 	Marka.prototype.rotate = function(direction) {
 
 		applyFunc(this.elements, function(i) {
-			i.className = i.className.replace('  ', ' ').replace(/marka-rotate-[\w]+/, '');
-			i.className += 'marka-rotate-'+direction+' ';
+			i.className = i.className.replace('  ', ' ').replace(/marka-rotate-[\w]+/g, '') + ' marka-rotate-'+direction;
 		});	
 
 		return this;
