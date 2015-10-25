@@ -1,5 +1,4 @@
-
-;(function(window) {
+(function() {
 	'use strict';
 
     // Blocks needed to create the icon
@@ -362,6 +361,13 @@
 		return this;
 	};
 
-	window.Marka = Marka;
+    // UMD wrapper that works with window, node.js, and AMD modules
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = Marka;
+    } else if (typeof define === 'function' && define.amd) {
+        define(Marka);
+    } else if (window) {
+        window.Marka = Marka;
+    }
 
-})(window);
+})();
